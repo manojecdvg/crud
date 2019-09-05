@@ -1,0 +1,145 @@
+@CHARSET "UTF-8";
+.tablelist {
+}
+.tablelist li {
+	display: block;
+}
+.tablelist {
+	width: 100%;
+}
+.tablelist tr th {
+	background-color: #DDDCCC;
+	color: #666;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: left;
+	padding: 5px;
+	border-top: 1px solid #FFF;
+	border-left: 1px solid #FFF;
+	border-bottom: 1px solid #CCCBBB;
+	vertical-align: bottom;
+}
+.tablelist tr th.linked {
+	padding: 0px;
+}
+.tablelist tr th.linked a {
+	color: #666;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: left;
+	padding: 5px;
+	display: block;
+}
+.tablelist tr th.linked a:hover {
+	background-color: #F2F1D9;
+}
+.tablelist tr th:first-child {
+	border-left: 1px solid #CCCBBB;	
+}
+.tablelist tr th:last-child {
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #FFF;
+}
+.tablelist tbody tr td:last-child {
+	border-right: 1px solid #CCCBBB;
+}
+.tablelist tbody tr {
+	background: #F6F5E5;
+	color: #333;
+	font-size: 12px;
+}
+.tablelist tbody tr:hover {
+	background: #FFFEEE;
+}
+.tablelist tr td {
+	padding: 5px;
+	border-bottom: 1px solid #CCCBBB;
+	border-left: 1px solid #FFF;
+	border-top: 1px solid #FFF;
+	height: 25px;
+}
+.tablelist tr td:first-child {
+	border-left: 1px solid #CCCBBB;	
+}
+.tablelist tr td.action {
+	padding: 0;
+}
+.tablelist tr td.action ul.icons li {
+	color: #07C;
+	width: 16px;
+	height: 20px;
+	-moz-border-radius: 3px;
+	display: inline-block;
+}
+.tablelist tr td.action ul.icons a:hover {
+	color: #666;
+	text-decoration: none;
+	width: 16px;
+	height: 16px;
+}
+.tablelist td.action ul.icons a span {
+	display: none;
+}
+.tablelist tr td.date {
+	font-size: 10px;
+	font-family: "Myriad Pro"
+}
+.tablelist tr td.number {
+	text-align: right;
+}
+.tablelist tr td.currency {
+	text-align: right;
+}
+.tablelist tr td.currency:before {
+	content: 'MRF ';
+}
+.tablelist tr td ul li {
+
+}
+.tablelist tr td.action ul.icons li a {
+	display: block;
+	width: 16px;
+	height: 16px;
+}
+td.action ul.icons li:hover {
+	background: #FEC613;
+}
+.icon-edit {
+	background: url(../images/icons.gif) no-repeat 0px 0px;
+}
+.icon-view {
+	background: url(../images/icons.gif) no-repeat -16px 0px;
+}
+.icon-go {
+	background: url(../images/icons.gif) no-repeat -32px 0px;
+}
+.icon-turn {
+	background: url(../images/icons.gif) no-repeat -48px 0px;
+}
+.icon-cross {
+	background: url(../images/icons.gif) no-repeat -64px 0px;
+}
+.icon-import {
+	background: url(../images/icons.gif) no-repeat -80px 0px;
+}
+.tablelist tr td ul.list {
+	height: 100%;
+}
+.tablelist tr td ul.list li {
+	display: inline-block;
+	white-space: nowrap;
+	overflow: hidden;
+
+	height: 100%;
+}
+.tablelist tr td ul.list li a {
+	display: block;
+	padding: 0 5px;
+	height: 100%;
+}
+.tablelist tr td ul.list li a:hover {
+	text-decoration: none;
+	cursor: pointer;
+	background: #FEC613;
+}

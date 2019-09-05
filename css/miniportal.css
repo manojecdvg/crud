@@ -1,0 +1,23 @@
+@CHARSET "ISO-8859-1";
+#container-4 {
+	background: #FFF;
+	padding: 20px;
+	border: 3px solid #DBDBDB;
+	width: 600px;
+}
+#type-messages {
+	width: 375px;
+	float: right;
+	text-align: left;
+	padding: 5px;
+	background: #E6E6E6;
+}
+#type-messages .limit {
+	line-height: 14px;
+	padding: 3px;
+	display: inline-block;
+}
+.limit_info_bold {
+	font-size:13px;
+	color:#C69;
+}

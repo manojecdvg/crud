@@ -1,0 +1,33 @@
+@CHARSET "UTF-8";
+table.table-bluestripes {
+	width: 100%;
+	border-collapse: collapse;
+	color: #555;
+}
+table.table-bluestripes tr {
+	border: 1px solid #eee;
+}
+table.table-bluestripes td, table.table-bluestripes th {
+	padding: 2px 5px;
+	border: 1px solid #eee;
+}
+table.table-bluestripes thead tr {
+	background-color: #B1C3D9;
+}
+table.table-bluestripes tbody tr {
+	height: 30px;
+	background-color: #EAEAEA;
+}
+table.table-bluestripes tbody tr:nth-child(2n+0) {
+	background-color: #F1F6FA;	
+}
+table.table-bluestripes tbody tr:hover {
+	background-color: #EFEFEF;
+}
+table.table-bluestripes tbody tr:nth-child(2n+0):hover {
+	background-color: #F6FBFF;
+}
+table.table-bluestripes tbody tr.selected, table.table-bluestripes tbody tr.selected:hover {
+	background-color: #DDD;
+	color: #000;
+}

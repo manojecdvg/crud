@@ -1,0 +1,10 @@
+RewriteEngine on
+RewriteCond $1 !^(index\.php|assets|files|js|img|images|css|robots\.txt)
+RewriteBase /
+RewriteCond $1 !^(index\.php|assets|files|js|img|images|css|robots\.txt)
+RewriteEngine on
+RewriteCond $1 !^(index\.php|assets|files|js|img|images|css|robots\.txt)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule .* index.php/$0 [PT,L]
+Options All -Indexes

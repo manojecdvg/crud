@@ -1,0 +1,237 @@
+
+body {
+		
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	font-family: Arial, "Trebuchet MS", "Swis721 Cn BT", Verdana;
+	font-size: 9pt;
+	background:#FFF;
+	/*background-image: url(../../img/online_texture.jpg ) ;
+	background-size: 850px 650px;*/
+}
+.ui-widget input[type="text"], .ui-widget textarea, .ui-widget input[type="password"] {
+    color: #1c94c4;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    padding: 0.36em;
+    width: 94%;
+}.ui-widget select {
+    color: #1c94c4;
+
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    padding: 0.28em;
+    width: 98%;
+}
+.area {
+   
+
+    opacity:0;
+
+}
+#main {
+
+   /* min-height: 650px; */
+}
+.error{
+	  color: black;
+    background-color: #FFFFFF;
+}
+.nonerror{
+	color: black;
+    background-color: #FFFFFF;
+	text-align: justify;
+    text-justify: inter-word;
+	
+}
+.dialoggenerate {
+
+background:url(../../img/st_header4.png) no-repeat  #FFFFFF ;
+
+ background-size: 430px 60px;
+ background-position:top center;
+ width:430px;
+  height: 60px;
+}
+.dialoggenerate .ui-widget-header {
+background: transparent;
+border:hidden;
+ height: 60px;
+}
+
+.dialoggenerate .ui-dialog-buttonpane {
+	background-color:#FFFFFF;
+ /*background:url(../../img/st_footer.png ) no-repeat #FFFFFF ;
+ background-color:#F0EFEA;
+ background-size: 290px 54px; */
+}
+
+.dvlink{
+	position: absolute;
+	background-color:#FFFFFF;
+    color:black;
+    text-align:center;
+    padding:0px;
+	font-size:14px;
+	width:185px;
+	font-weight:600;
+	font:Verdana, Geneva, sans-serif;
+    vertical-align:middle;
+	top:92%;
+}
+.dvimage{
+	
+	position: relative;
+ /* top: 12px; */
+
+}
+.dialogfaq {
+background:url(../../img/st_faq.png ) no-repeat  #FFFFFF ;
+ background-size: 975px 75px;
+ background-position:top center;
+ width:975px;
+  height: 75px;
+}
+.dialogfaq .ui-widget-header {
+background: transparent;
+border:hidden;
+}
+
+.dialogfaq .ui-dialog-buttonpane {
+		background-color:#FFFFFF;
+ /*background:url(../../img/st_footer.png ) no-repeat #FFFFFF ;
+ background-color:#F0EFEA;
+ background-size: 290px 54px; */
+}
+
+.dialogdisclaim {
+background:url(../../img/st_disclaim.png ) no-repeat  #FFFFFF ;
+ background-size: 965px 75px;
+ background-position:top center;
+ width:965px;
+  height: 75px;
+}
+.dialogdisclaim .ui-widget-header {
+background: transparent;
+border:hidden;
+}
+
+.dialogdisclaim .ui-dialog-buttonpane {
+		background-color:#FFFFFF;
+ /*background:url(../../img/st_footer.png ) no-repeat #FFFFFF ;
+ background-color:#F0EFEA;
+ background-size: 290px 54px; */
+}
+
+.dialogregister {
+
+background:url(../../img/online_reg.jpg ) no-repeat  #FFFFFF ;
+
+ background-size: 430px 60px;
+ background-position:top center;
+ width:430px;
+  height: 60px;
+}
+.dialogregister .ui-widget-header {
+background: transparent;
+border:hidden;
+ height: 60px;
+}
+
+.dialogregister .ui-dialog-buttonpane {
+	background-color:#FFFFFF;
+ /*background:url(../../img/st_footer.png ) no-repeat #FFFFFF ;
+ background-color:#F0EFEA;
+ background-size: 290px 54px; */
+}
+
+.dialoghelp {
+
+background:url(../../img/online_help.jpg ) no-repeat  #FFFFFF ;
+
+ background-size: 485px 60px;
+ background-position:top center;
+ width:525px;
+  height: 60px;
+}
+.dialoghelp .ui-widget-header {
+background: transparent;
+border:hidden;
+height:25px;
+}
+
+.dialoghelp .ui-dialog-buttonpane {
+	background-color:#FFFFFF;
+ /*background:url(../../img/st_footer.png ) no-repeat #FFFFFF ;
+ background-color:#F0EFEA;
+ background-size: 290px 54px; */
+}
+
+
+
+
+.div {
+	 
+	position: absolute;
+	top: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 500px;
+	height: 20px;
+	color: green;
+}
+.header{
+	background: url("../../img/statement_logo.png") no-repeat center center;
+   
+	
+}
+.content{
+	background: url("../../img/statement_body.png") no-repeat center top fixed;
+    color: black;
+    font-family: Arial,"Trebuchet MS","Swis721 Cn BT",Verdana;
+    font-size: 9pt;
+    margin-top: 0;
+	
+}
+.a {
+	color: #428BCA;
+	text-decoration: none;
+}
+
+.ui-dialog-titlebar-close {
+  visibility: hidden;
+}
+#dvconfirm {
+  color: #0066FF;
+  font-family:arial;
+
+}#dvidentification {
+  color: #0066FF;
+  font-family:arial;
+
+}-->
+#dvsttypetext {
+  color: #0066FF;
+  font-family:arial;
+
+}
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {
+  float: none !important;
+  text-align:right;
+
+}
+
+.ui-button-left {
+  float: left;  
+
+}
+
+.accept {
+    float:left;
+    display: inline-block;
+    margin-top: 1em;
+	font-size:15px;
+	color: #000000;
+}

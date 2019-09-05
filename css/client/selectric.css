@@ -1,0 +1,160 @@
+
+.selectricWrapper {
+    cursor: pointer;
+    margin: 0 0 10px;
+    position: relative;
+    width: 300px;
+}
+.selectricResponsive {
+    width: 100%;
+}
+.selectric {
+    background: #f8f8f8 none repeat scroll 0 0;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    position: relative;
+}
+.selectric .label {
+    color: #444;
+    display: block;
+    font-size: 12px;
+    line-height: 18px;
+    margin: 0 30px 0 0;
+    min-height: 18px;
+    overflow: hidden;
+    padding: 6px;
+    white-space: nowrap;
+}
+.selectric .button {
+    color: #bbb;
+    display: block;
+    font: 0px/0 a;
+    height: 30px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 30px;
+}
+.selectric .button::after {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #bbb transparent -moz-use-text-color;
+    border-image: none;
+    border-style: solid solid none;
+    border-width: 4px 4px medium;
+    bottom: 0;
+    content: " ";
+    height: 0;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0;
+}
+.selectricHover .selectric {
+    border-color: #ccc;
+}
+.selectricHover .selectric .button {
+    color: #888;
+}
+.selectricHover .selectric .button::after {
+    border-top-color: #888;
+}
+.selectricOpen {
+    z-index: 9999;
+}
+.selectricOpen .selectric {
+    background: #f0f0f0 none repeat scroll 0 0;
+    border-color: #ccc;
+}
+.selectricOpen .selectricItems {
+    display: block;
+}
+.selectricDisabled {
+    -moz-user-select: none;
+    cursor: default;
+    opacity: 0.5;
+}
+.selectricHideSelect {
+    height: 0;
+    overflow: hidden;
+    position: relative;
+    width: 0;
+}
+.selectricHideSelect select {
+    display: none;
+    left: -100%;
+    position: absolute;
+}
+.selectricInput {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0 !important;
+    border: medium none !important;
+    clip: rect(0px, 0px, 0px, 0px) !important;
+    height: 1px !important;
+    left: 0 !important;
+    margin: 0 !important;
+    outline: medium none !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    top: 0 !important;
+    width: 1px !important;
+}
+.selectricTempShow {
+    display: block !important;
+    position: absolute !important;
+    visibility: hidden !important;
+}
+.selectricItems {
+    background: #f9f9f9 none repeat scroll 0 0;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px -6px;
+    display: none;
+    left: 0;
+    position: absolute;
+    top: 100%;
+    z-index: -1;
+}
+.selectricItems .selectricScroll {
+    height: 100%;
+    overflow: auto;
+}
+.selectricAbove .selectricItems {
+    bottom: 100%;
+    top: auto;
+}
+.selectricItems ul, .selectricItems li {
+    font-size: 12px;
+    line-height: 20px;
+    list-style: outside none none;
+    margin: 0;
+    min-height: 20px;
+    padding: 0;
+}
+.selectricItems li {
+    border-bottom: 1px solid #eee;
+    border-top: 1px solid #fff;
+    color: #666;
+    cursor: pointer;
+    display: block;
+    padding: 5px;
+}
+.selectricItems li.selected {
+    background: #efefef none repeat scroll 0 0;
+    border-top-color: #e0e0e0;
+    color: #444;
+}
+.selectricItems li:hover {
+    background: #f0f0f0 none repeat scroll 0 0;
+    color: #444;
+}
+.selectricItems li.disabled {
+    background: #f5f5f5 none repeat scroll 0 0;
+    border-top-color: #fafafa;
+    color: #bbb;
+    cursor: default;
+}

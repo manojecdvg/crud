@@ -1,0 +1,7077 @@
+
+html, body {
+    color: #2b2a26;
+    font: 11px normal Arial,Helvetica,sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 11px;
+    overflow: auto;
+    position: relative;
+    width: 100%;
+
+}
+ul, ol, li, img, span, p, input, textarea, h1, h2, h3, h4, h5, h6, a, table, th, td, caption, a {
+    border: 0 none;
+    list-style-type: none;
+    margin: 0;
+    outline: 0 none;
+    padding: 0;
+    text-decoration: none;
+}
+@font-face {
+    font-family: "WebRupee";
+    src: url("../fonts/WebRupee.V2.0.eot") format("embedded-opentype"), url("../fonts/WebRupee.V2.0.woff") format("woff"), url("../fonts/WebRupee.V2.0.ttf") format("truetype"), url("../fonts/WebRupee.V2.0.svg") format("svg");
+}
+a {
+    color: #000;
+}
+.interlink {
+    color: black;
+}
+.clear {
+    clear: both;
+}
+.padding10 {
+    padding: 10px;
+}
+.padding-left15 {
+    padding: 15px;
+}
+.font-normal {
+    font-family: "ZurichBTCondensed",Arial,Helvetica,sans-serif;
+    font-weight: normal;
+}
+.white-bg {
+    background: #fff none repeat scroll 0 0;
+}
+.margin-top5 {
+    margin-top: 5px !important;
+}
+.margin-top10 {
+    margin-top: 10px !important;
+}
+.margin-right10 {
+    margin-right: 10px;
+}
+.padding-top10 {
+    padding-top: 10px !important;
+}
+.float-left {
+    float: left;
+}
+
+#header-wrapper {
+   background: #header-wrapper url("../images/client/images/header-bg.png") repeat-x scroll left bottom;
+     /*background:#aec245;*/ 
+}
+#footer-wrapper {
+   /* background: rgba(0, 0, 0, 0) url("../images/client/footer-bg.png") repeat-x scroll left top; */
+   background: #AEAEAE;
+   height:60px;
+
+}
+#content-wrapper {
+    background: #b02a30 url("../images/client/body-bg.png") repeat-x scroll left bottom;
+    height: 600px;
+    width: 100%;
+	
+}
+#header, #footerclient {
+    margin: 0 auto;
+    width: 100%;
+	
+}
+#header {
+    height: 122px;
+	
+}
+#content {
+    margin: 0 auto;
+    width: 980px;
+}
+#navigation {
+    height: 42px;
+    padding-top: 1px;
+    width: 100%;
+}
+.menu {
+    height: 41px;
+}
+.menu li {
+    float: left;
+    height: 41px;
+}
+.menu li.last a {
+    border-right: medium none;
+}
+.menu li a {
+    border-right: 1px solid #85939e;
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 15px;
+    padding: 5px 10px 0;
+    text-transform: uppercase;
+}
+.menu li a.login-plus {
+    background: rgba(0, 0, 0, 0) url("../images/client/plus-icon.gif") no-repeat scroll 0 0;
+    padding-left: 28px;
+}
+.menu li a.login-minus {
+    background: rgba(0, 0, 0, 0) url("../images/client/minus-icon.gif") no-repeat scroll 0 0;
+    margin-top: 10px;
+    padding-left: 28px;
+}
+.connect {
+    float: right;
+    font-size: 11px;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-right: 14px;
+    padding-top: 8px;
+}
+.connect li {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    float: left;
+    font-size: 12px;
+    margin-left: 0;
+    margin-top: 4px;
+    text-transform: uppercase;
+}
+.connect li.first {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    color: #fff;
+    padding: 7px 3px 0 0;
+    width: auto;
+}
+.connect li a {
+    color: #000;
+    display: block;
+    font-size: 11px;
+    height: 27px;
+    padding: 5px 0 0 37px;
+    width: 0;
+}
+.connect li a.facebook {
+    background: rgba(0, 0, 0, 0) url("../images/client/fb-icon.png") no-repeat scroll 5px 0;
+}
+.connect li a.google {
+    background: rgba(0, 0, 0, 0) url("../images/client/google-icon.png") no-repeat scroll 14px 4px;
+}
+.connect li a.youtube {
+    background: rgba(0, 0, 0, 0) url("../images/client/youtube-icon-small.jpeg") no-repeat scroll 3px 0;
+}
+.connect li a.twitter {
+    background: rgba(0, 0, 0, 0) url("../images/client/twitter-icon-small.jpg") no-repeat scroll 0 0;
+}
+#logo {
+    float: left;
+    padding: 12px 0 0 14px;
+}
+#user-types {
+    float: right;
+    height: 60px;
+    margin-right: 14px;
+    margin-top: 14px;
+}
+#user-types li {
+    float: left;
+    margin-left: 20px;
+}
+#user-types li a {
+    color: #0b273c;
+    display: block;
+    float: left;
+    font-family: "ZurichBTBoldCondensed",Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    height: 50px;
+    padding: 10px 0 0 56px;
+    text-transform: uppercase;
+}
+#user-types li a span {
+    font-family: "ZurichBTCondensed",Arial,Helvetica,sans-serif;
+    font-size: 10px;
+}
+#user-types li.new-here-active a, #user-types li.what-i-want-active a, #user-types li.existing-cust-active a {
+    color: #b02a30;
+}
+#user-types li.new-here-active a:hover, #user-types li.what-i-want-active a:hover, #user-types li.existing-cust-active a:hover {
+    color: #0b273c;
+}
+#user-types li.new-here a {
+    background: rgba(0, 0, 0, 0) url("../images/client/new-here-bg.gif") no-repeat scroll 0 0;
+}
+#user-types li.what-i-want a {
+    background: rgba(0, 0, 0, 0) url("../images/client/i-know-bg.gif") no-repeat scroll 0 0;
+}
+#user-types li.existing-cust a {
+    background: rgba(0, 0, 0, 0) url("../images/client/existing-cust-bg.gif") no-repeat scroll 0 0;
+}
+#user-types li.new-here a:hover {
+    background: rgba(0, 0, 0, 0) url("../images/client/new-here-over.gif") no-repeat scroll 0 0;
+}
+#user-types li.new-here-active a {
+    background: rgba(0, 0, 0, 0) url("../images/client/new-here-red.gif") no-repeat scroll 0 0;
+}
+#user-types li.what-i-want a:hover {
+    background: rgba(0, 0, 0, 0) url("../images/client/i-know-over.gif") no-repeat scroll 0 0;
+}
+#user-types li.what-i-want-active a {
+    background: rgba(0, 0, 0, 0) url("../images/client/i-know-red.gif") no-repeat scroll 0 0;
+}
+#user-types li.existing-cust-active a {
+    background: rgba(0, 0, 0, 0) url("../images/client//public/bolimages/existing-cust-red.gif") no-repeat scroll 0 0;
+}
+#user-types li.existing-cust a:hover {
+    background: rgba(0, 0, 0, 0) url("../images/client//public/bolimages/existing-cust-over.gif") no-repeat scroll 0 0;
+}
+#footerclient {
+ clear: both;
+    position: relative;
+    /*z-index: 1000;*/
+    height: 3em;
+    margin-top: -3em;
+
+}
+#footerclient p {
+    float: left;
+    line-height: 40px;
+    margin-left: 14px;
+}
+.footerlinks {
+    float: right;
+    height: 50px;
+	 vertical-align:bottom;
+}
+.footerlinks li {
+    float: left;
+    height: 40px;
+    margin-left: 25px;
+    padding: 0 5px;
+}
+.footerlinks li span {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 3px 0 0 28px;
+    text-transform: uppercase;
+}
+.footerlinks li span.sitemap-plus {
+    background: rgba(0, 0, 0, 0) url("../images/client/plus-icon.gif") no-repeat scroll 0 0;
+}
+.footerlinks li span.sitemap-minus {
+    background: rgba(0, 0, 0, 0) url("../images/client/minus-icon.gif") no-repeat scroll 0 0;
+}
+.footerlinks li span.legalInfo-plus {
+    background: rgba(0, 0, 0, 0) url("../images/client/plus-icon.gif") no-repeat scroll 0 0;
+}
+.footerlinks li span.legalInfo-minus {
+    background: rgba(0, 0, 0, 0) url("../images/client/minus-icon.gif") no-repeat scroll 0 0;
+}
+#login-li, #sitemap-li, #legalInfo-li {
+    cursor: pointer;
+}
+#login-popup {
+    background: #fff none repeat scroll 0 0;
+    clear: both;
+    color: #000;
+    display: none;
+    height: 150px;
+    left: 0;
+    position: absolute;
+    top: 116px;
+    width: 100%;
+    z-index: 99999;
+}
+#login-li {
+    padding-left: 14px !important;
+}
+#legalInfo-li {
+    padding-right: 14px !important;
+}
+#mask {
+    background: #0f0f0f none repeat scroll 0 0;
+    display: none;
+    left: 0;
+    position: absolute;
+    z-index: 9000;
+}
+#sitemap-popup {
+    background: #fff url("../images/client/site-map-bg.png") repeat-x scroll left top;
+    bottom: 40px !important;
+    clear: both;
+    color: #000;
+    display: none;
+    height: 210px;
+    left: 0;
+    position: absolute;
+    top: auto !important;
+    width: 100%;
+    z-index: 99999;
+}
+.close-popup {
+    float: right;
+    margin: 10px 10px 0 0;
+}
+#legalInfo-popup {
+    background: #fff none repeat scroll 0 0;
+    bottom: 40px;
+    clear: both;
+    color: #000;
+    display: none;
+    height: 405px;
+    left: 0;
+    position: absolute;
+    top: auto !important;
+    width: 100%;
+    z-index: 99999;
+}
+.help-links, .products-links, .Exist-customers-links, .More-info-links, .get-touch-links {
+    float: left;
+    width: 200px;
+}
+.help-links h3, .products-links h3, .Exist-customers-links h3, .More-info-links h3, .get-touch-links h3 {
+    font-family: "ZurichBTCondensed",Arial,Helvetica,sans-serif;
+    padding-bottom: 5px;
+    padding-left: 8px;
+    text-transform: uppercase;
+}
+.help-links ul li a, .products-links ul li a, .Exist-customers-links ul li a, .More-info-links ul li a, .get-touch-links ul li a {
+    color: #5e5f60;
+    display: inline;
+    float: none !important;
+    font-size: 12px;
+    padding-bottom: 3px;
+    padding-left: 8px;
+    padding-top: 1px;
+}
+.help-links ul li, .products-links ul li, .Exist-customers-links ul li, .More-info-links ul li, .get-touch-links ul li {
+    padding: 2px 0;
+    width: 195px !important;
+}
+.help-links ul li a span, .products-links ul li a span, .Exist-customers-links ul li a span, .More-info-links ul li a span, .get-touch-links ul li a span {
+    padding-bottom: 3px;
+    padding-top: 1px;
+}
+.help-links ul li a:hover span, .products-links ul li a:hover span, .Exist-customers-links ul li a:hover span, .More-info-links ul li a:hover span, .get-touch-links ul li a:hover span {
+    background: #fff url("../images/client/site-map-link-hover-right.png") no-repeat scroll right top;
+    color: #fff;
+    padding-right: 3px;
+}
+.help-links ul li a:hover, .products-links ul li a:hover, .Exist-customers-links ul li a:hover, .More-info-links ul li a:hover, .get-touch-links ul li a:hover {
+    background: #fff url("../images/client/site-map-link-hover-left.png") no-repeat scroll left top;
+    color: #fff;
+}
+.site-map-center {
+    margin: 20px auto;
+    width: 1000px;
+}
+.new-user {
+    float: left;
+    height: 485px;
+    width: 485px;
+}
+.new-user #headerCarousel {
+    height: 440px;
+    width: 472px;
+}
+.new-user .top-banner-main {
+    left: 370px;
+    overflow: hidden;
+    position: relative;
+    top: 135px;
+}
+.new-user .rel-pos-div, .invest-container .rel-pos-div {
+    position: relative;
+    z-index: 999;
+}
+.new-user .watch-video {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/slide-start-btn.png") no-repeat scroll 15px top;
+    color: #ffffff;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 50px;
+    position: absolute;
+    right: 25px;
+    top: 216px;
+    z-index: 9999;
+}
+.new-user .thumbNav {
+    bottom: -22px;
+    left: 203px;
+    padding: 10px;
+    position: absolute;
+    z-index: 111;
+}
+.invest-container {
+    background: #fff none repeat scroll 0 0;
+    float: right;
+    height: 479px;
+    padding: 6px 6px 0;
+    position: relative;
+    width: 308px;
+}
+.invest-container #investment {
+    height: 479px;
+    width: 308px;
+}
+.invest-container .thumbNav {
+    bottom: -22px;
+    left: 140px;
+    padding: 10px;
+    position: absolute;
+    z-index: 111;
+}
+.invest-container .investment-bg {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/investment-wrp.png") no-repeat scroll left top;
+    display: block;
+    position: absolute;
+    right: 25px;
+    top: 216px;
+    z-index: 9999;
+}
+.real-stories-head {
+    color: #333;
+    font-family: "ZurichBTBoldCondensed",Arial,Helvetica,sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px 10px;
+    text-transform: uppercase;
+}
+.real-stories-head p {
+    float: right;
+    font-size: 15px;
+    padding-top: 5px;
+    text-align: left;
+    width: 160px;
+}
+.real-stories-head p span {
+    font-family: "ZurichBTCondensed",Arial,Helvetica,sans-serif;
+    font-size: 14px;
+}
+.real-stories-bottom {
+    float: left;
+    padding: 40px 0 0 70px;
+}
+.real-counter-text {
+    color: #333;
+    float: left;
+    font-family: "ZurichBTBoldCondensed",Arial,Helvetica,sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    width: 250px;
+}
+.real-counter-text span, .real-counter-text-small {
+    color: #333;
+    font-family: "ZurichBTCondensed",Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.real-counter {
+    color: #fff;
+    float: left;
+    font-family: "ZurichBTBoldCondensed",Arial,Helvetica,sans-serif;
+    margin-right: 10px;
+}
+.real-counter span {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/real-counter-bg.png") no-repeat scroll 0 0;
+    display: block;
+    float: left;
+    font-size: 49px;
+    height: 42px;
+    line-height: 42px;
+    margin-left: 1px;
+    overflow: hidden;
+    text-align: center;
+    width: 28px;
+}
+.real-counter span span {
+    background: transparent url("/public/bolimages/real-counter-strike.png") no-repeat scroll left 15px;
+    height: 35px;
+    margin: 0;
+    position: relative;
+    top: -42px;
+    width: 28px;
+    z-index: 999;
+}
+.whats-good {
+    background: #fff none repeat scroll 0 0;
+    color: #333;
+    float: left;
+    font-family: "ZurichBTBoldCondensed",Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    height: 80px;
+    padding: 40px 40px 35px;
+    text-transform: uppercase;
+    width: 405px;
+}
+.whats-good .left {
+    float: left;
+    font-size: 18px;
+    font-weight: bold;
+    padding-right: 20px;
+    width: 130px;
+}
+.whats-good .left span {
+    font-size: 11px;
+    font-weight: bold;
+}
+.three-steps {
+    float: left;
+    font-family: "ZurichBTBoldCondensed",Arial,Helvetica,sans-serif;
+    padding-left: 25px;
+    text-transform: uppercase;
+    width: 160px;
+}
+.three-steps p {
+    font-size: 11px;
+    font-weight: bold;
+}
+.step-1, .step-2, .step-3 {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/steps-sprite.png") repeat scroll left top;
+    display: inline-block;
+    height: 39px;
+    margin: 5px 1px 5px 0;
+    width: 39px;
+}
+.step-2 {
+    background-position: -40px top;
+}
+.step-3 {
+    background-position: -80px top;
+}
+.honeybee-link a {
+    display: block;
+    height: 143px;
+    overflow: hidden;
+    width: 143px;
+}
+.honeybee-link a span {
+    color: #2b2a26;
+    cursor: pointer;
+    display: block;
+    font-family: "ZurichBTBoldCondensed",Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    height: 30px;
+    line-height: 30px;
+    text-align: right;
+    text-transform: uppercase;
+    width: 143px;
+}
+.square-tile {
+    background: #fff none repeat scroll 0 0;
+    border: 6px solid #fff;
+    float: left;
+    height: 143px;
+    overflow: hidden;
+    width: 143px;
+}
+.square-tile a {
+    display: block;
+    font-size: 11px;
+    font-weight: bold;
+    height: 143px;
+    overflow: hidden;
+    width: 143px;
+}
+.square-tile a img, .fund-performance {
+    display: block;
+    width: 143px;
+}
+.square-tile a span {
+    color: #2b2a26;
+    cursor: pointer;
+    display: block;
+    font-family: "ZurichBTBoldCondensed",Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    height: 30px;
+    line-height: 30px;
+    text-align: right;
+    text-transform: uppercase;
+    width: 143px;
+}
+.fund-performance {
+    background: #004a80 none repeat scroll 0 0;
+    color: #fff;
+    font-family: "ZurichBTBoldCondensed",Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    height: 96px;
+    padding: 12px;
+    text-transform: uppercase;
+    width: 119px;
+}
+.fund-performance span {
+    color: #80a5c0 !important;
+    font-size: 12px !important;
+    height: auto !important;
+    line-height: 15px !important;
+    text-align: left !important;
+}
+.fund-performance .percentage {
+    font-size: 24px;
+}
+.rect-tile-medium {
+    background: #fff none repeat scroll 0 0;
+    float: left;
+    height: 143px;
+    padding: 6px;
+    position: relative;
+    width: 308px;
+}
+.rect-tile-medium h2 {
+    color: #333;
+    font-family: "ZurichBTCondensed",Arial,Helvetica,sans-serif;
+    font-size: 15px;
+    height: 23px;
+    text-transform: uppercase;
+}
+.rect-tile-medium h3 {
+    color: #333;
+    font-family: "ZurichBTCondensed",Arial,Helvetica,sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.smart-search-tile, .products-tile, .exist-user-tile, .join-us-tile, .glossary-tile {
+    color: #fff;
+    display: block;
+    font-family: "ZurichBTBoldCondensed",Arial,Helvetica,sans-serif;
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.smart-search-tile {
+    background: #f07b1f url("/public/bolimages/smart-search-icon.gif") no-repeat scroll center 40px;
+    padding-top: 85px;
+}
+.products-tile {
+    background: #b12c32 url("/public/bolimages/products-icon.png") no-repeat scroll center 33px;
+    padding-top: 85px;
+}
+.exist-user-tile {
+    background: #b12c32 url("/public/bolimages/existing-user-icon.png") no-repeat scroll center 25px;
+    padding-top: 90px;
+}
+.glossary-tile {
+    background: #3b5ba2 none repeat scroll 0 0;
+    padding-top: 63px;
+}
+.products-tile span {
+    color: #fff !important;
+    line-height: 17px !important;
+    text-align: center !important;
+}
+.glossary-tile span {
+    color: #fff !important;
+    line-height: 17px !important;
+    text-align: center !important;
+}
+.investment-tag {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/carousel-tag-bg.png") no-repeat scroll 0 0;
+    color: #fff;
+    display: block;
+    font-family: "ZurichBTBoldCondensed",Arial,Helvetica,sans-serif !important;
+    font-size: 14px;
+    height: 27px;
+    line-height: 27px;
+    padding: 5px 10px 5px 32px;
+    position: absolute;
+    right: -13px;
+    text-transform: uppercase;
+    top: 154px;
+    width: 87px;
+    z-index: 999;
+}
+.rel-pos-div .description {
+    color: #2b2a26;
+    left: 0;
+    padding: 20px 10px 0 17px;
+    position: absolute;
+    top: 0;
+    z-index: 9999;
+}
+.rel-pos-div .description .content {
+    font-size: 14px;
+    padding-top: 20px;
+}
+.rel-pos-div .description .title {
+    font-family: "ZurichBTBoldCondensed",Arial,Helvetica,sans-serif;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+.rel-pos-div .description .heading {
+    font-family: "ZurichBTBoldCondensed",Arial,Helvetica,sans-serift;
+    font-size: 34px;
+    padding-top: 0;
+    text-transform: uppercase;
+}
+.rel-pos-div .description .name {
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 15px;
+}
+.rel-pos-div .description .designation {
+    font-size: 12px;
+}
+.left-content {
+    float: left;
+    width: 658px;
+}
+.social-heading {
+    color: #2b2a26;
+    float: left;
+    font-family: "ZurichBTBoldCondensed",Arial,Helvetica,sans-serif;
+    font-size: 19px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+.social-links {
+    float: right;
+}
+.social-links li {
+    float: left;
+    padding-left: 4px;
+}
+.social-links li a {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/social-icons.png") no-repeat scroll 0 0;
+    display: block;
+    height: 26px;
+    text-indent: -9999px;
+    width: 26px;
+}
+.social-links li a.facebook {
+    background-position: 0 0;
+}
+.social-links li a.twitter {
+    background-position: -26px 0;
+}
+.social-links li a.gplus {
+    background-position: -52px 0;
+}
+.social-desc {
+    background: #ebeae5 none repeat scroll 0 0;
+    margin-top: 7px;
+    padding: 15px;
+}
+.social-desc p {
+    color: #333;
+}
+.social-desc a, .comments span {
+    color: #004a80;
+    font-weight: bold;
+}
+.social-twitter {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/twitter-icon.png") no-repeat scroll 0 0;
+    height: 54px;
+    padding-left: 70px;
+}
+.comments {
+    color: #666;
+    font-size: 11px;
+    padding-top: 12px;
+}
+.send-photo-tag {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/send-photo-tag.png") no-repeat scroll 0 0;
+    color: #fff;
+    display: block;
+    font-family: "ZurichBTBoldCondensed",Arial,Helvetica,sans-serif !important;
+    font-size: 14px;
+    height: 27px;
+    line-height: 27px;
+    padding: 5px 10px 5px 68px;
+    position: absolute;
+    right: -13px;
+    text-transform: uppercase;
+    top: 403px;
+    width: 111px;
+    z-index: 999;
+}
+.right-content {
+    float: right;
+    width: 320px;
+}
+.login-wrapper {
+    background: #fff none repeat scroll 0 0;
+    float: left;
+    height: 270px;
+    margin-right: 10px;
+    padding: 49px 0 0 24px;
+    width: 459px;
+}
+h1.heading {
+    color: #2b2a26;
+    font-family: "ZurichBTBoldCondensed",Arial,Helvetica,sans-serif;
+    font-size: 25px;
+    font-weight: normal;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+h1.heading-fund-summary {
+    color: #2b2a26;
+    font-family: "ZurichBTBoldCondensed",Arial,Helvetica,sans-serif;
+    font-size: 25px;
+    font-weight: normal;
+    padding-bottom: 20px;
+}
+.login-wrapper p {
+    color: #828282;
+    padding-top: 25px;
+    width: 392px;
+}
+.login-txt-right {
+    background: rgba(0, 0, 0, 0) url("../images/client/login-txt-right.png") no-repeat scroll right 0;
+    float: left;
+}
+.login-txt-left {
+    background: rgba(0, 0, 0, 0) url("../images/client/login-txt-left.png") no-repeat scroll 0 0;
+    border: medium none;
+    color: #2b2a26;
+    display: block;
+    font-family: Arial,Helvetica,sans-serif !important;
+    font-size: 12px;
+    height: 22px;
+    line-height: 22px;
+    padding: 5px 9px;
+    width: 375px;
+}
+.login-button {
+    background: rgba(0, 0, 0, 0) url("../images/client/login-button.png") no-repeat scroll 0 0;
+    float: left;
+    height: 32px;
+    margin: 10px 0 0 6px;
+    width: 35px;
+}
+.login-links {
+    padding-top: 20px;
+}
+.login-links a {
+    color: #004a80;
+    font-weight: bold;
+}
+.login-links span {
+    color: #ccc;
+    font-size: 17px;
+    padding: 0 8px;
+}
+.white-container3 {
+    background: #fff none repeat scroll 0 0;
+    height: 445px;
+    padding: 20px 17px 20px 28px;
+    width: 605px;
+}
+.white-container {
+    background: #fff none repeat scroll 0 0;
+    height: 445px;
+    padding: 20px 17px 20px 28px;
+    width: 605px;
+}
+.white-container p {
+    line-height: 19px;
+    margin-top: 5px;
+}
+.page-heading {
+    font-family: "ZurichBTBoldCondensed",Arial,Helvetica,sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.red-font {
+    color: red;
+}
+.small-font {
+    font-size: 8px;
+}
+.font-10 {
+    font-size: 10px;
+}
+.font-12 {
+    font-size: 12px;
+}
+.right-content2 {
+    float: right;
+    width: 155px;
+}
+.white-container2 {
+    background: #fff none repeat scroll 0 0;
+    float: left;
+    height: 465px;
+    padding: 20px 0 0;
+    width: 815px;
+}
+.white-container2-nav {
+    background: #fff none repeat scroll 0 0;
+    float: left;
+    height: 466px;
+    padding: 20px 0 0;
+    width: 815px;
+}
+.call-us {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/call-us-bg.png") no-repeat scroll right bottom !important;
+}
+.padding-left28 {
+    padding-left: 28px !important;
+}
+.nation {
+    color: #004a80;
+    font-family: "ZurichBTBoldItalic",Arial,Helvetica,sans-serif;
+    font-size: 24px;
+    padding: 10px 0 0 8px;
+}
+.nation span {
+    color: #f58220;
+}
+.india-number {
+    color: #333;
+    font-family: "ZurichBTBold",Arial,Helvetica,sans-serif;
+    font-size: 45px;
+    line-height: 45px;
+}
+.outside-number {
+    color: #333;
+    font-family: "ZurichBTBold",Arial,Helvetica,sans-serif;
+    font-size: 45px;
+    line-height: 45px;
+}
+.valid {
+    color: #2b2a26;
+    font-family: "ZurichBTBoldCondensed",Arial,Helvetica,sans-serif;
+    font-size: 15px;
+    padding: 7px 0 0 11px;
+    text-transform: uppercase;
+}
+.prefix {
+    color: #2d2d2d;
+    font-family: "ZurichBTCondensed",Arial,Helvetica,sans-serif;
+    font-size: 15px;
+    padding: 0 0 0 11px;
+    text-transform: uppercase;
+}
+.font14 {
+    font-size: 14px;
+}
+.premium-container {
+    float: left;
+    height: 320px;
+    padding-left: 28px;
+    padding-top: 20px;
+    width: 780px;
+}
+.premium-container1 {
+    float: left;
+    height: 340px;
+    padding-right: 5px;
+    width: 385px;
+}
+.premium-container2 {
+    float: right;
+    height: 350px;
+    padding-left: 5px;
+    width: 385px;
+}
+.premium-container6 {
+    float: left;
+    height: 350px;
+    padding-left: 10px;
+    padding-top: 20px;
+    width: 740px;
+}
+.paytypes6 {
+    float: right;
+    height: 75px;
+    padding-bottom: 3px;
+    padding-left: 2px;
+    width: 290px;
+}
+.paytypes6 a {
+    color: #f58220;
+    font-family: "ZurichBTBoldItalic",Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+.premium-container16 {
+    float: left;
+    height: 455px;
+    padding-right: 3px;
+    width: 380px;
+}
+.premium-container26 {
+    float: right;
+    height: 350px;
+    padding-left: 3px;
+    width: 380px;
+}
+.payimg {
+    float: left;
+    height: 75px;
+    padding-bottom: 3px;
+    padding-left: 2px;
+    width: 50px;
+}
+.paytypes {
+    float: right;
+    height: 75px;
+    padding-bottom: 3px;
+    padding-left: 2px;
+    width: 305px;
+}
+.close {
+    float: right;
+    padding-right: 30px;
+}
+.paytypes a {
+    color: #f58220;
+    font-family: "ZurichBTBoldItalic",Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+.premium-container h3 {
+    color: #013154;
+    font-size: 14px;
+    font-weight: bold;
+}
+.premium-container p {
+    font-size: 11px;
+    padding-top: 8px;
+}
+.claim-content {
+    width: 600px;
+}
+.claim-content1 {
+    float: left;
+    padding-left: 10px;
+    width: 70px;
+}
+.claim-content2 {
+    float: left;
+    padding-left: 10px;
+    width: 430px;
+}
+.claim-content3 {
+    float: left;
+    padding-left: 10px;
+    width: 500px;
+}
+.white-containerdiv {
+    height: 185px;
+    padding-left: 28px;
+    width: 800px;
+}
+.white-containerdiv1 {
+    float: left;
+    height: 185px;
+    padding-right: 40px;
+    width: 550px;
+}
+.white-containerdiv2 {
+    float: left;
+    height: 185px;
+    padding-left: 40px;
+    width: 150px;
+}
+.search-jobs-container {
+    background: #fff none repeat scroll 0 0;
+    height: 277px;
+    padding: 20px 28px 23px;
+    width: 594px;
+}
+.red-btn-right-big {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/red-btn-right-big.png") no-repeat scroll right 0;
+    float: left;
+}
+.red-btn-left-big {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/red-btn-left-big.png") no-repeat scroll 0 0;
+    border: medium none;
+    color: #fff;
+    cursor: pointer;
+    font-family: "ZurichBTBoldCondensed",Arial,Helvetica,sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 23px;
+    overflow: visible;
+    padding: 6px 13px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.red-btn-right-small {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/red-btn-right-small.png") no-repeat scroll right 0;
+    float: left;
+}
+.red-btn-left-small {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/red-btn-left-small.png") no-repeat scroll 0 0;
+    border: medium none;
+    color: #fff;
+    cursor: pointer;
+    font-family: "ZurichBTBoldCondensed",Arial,Helvetica,sans-serif;
+    font-size: 16px;
+    line-height: 21px;
+    overflow: visible;
+    padding: 3px 25px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.search-row {
+    background: #eae9e9 none repeat scroll 0 0;
+    border-top: 1px solid #fff;
+    height: 35px;
+}
+.alt {
+    background: #f3f3f3 none repeat scroll 0 0;
+}
+.search-row label {
+    border-right: 3px solid #fff;
+    color: #2b2a26;
+    display: block;
+    float: left;
+    font-size: 12px;
+    font-weight: bold;
+    height: 35px;
+    line-height: 35px;
+    padding-left: 18px;
+    width: 182px;
+}
+.margin-top20 {
+    margin-top: 20px !important;
+}
+.btn-container {
+    float: right;
+    padding-right: 40px;
+    padding-top: 55px;
+}
+.txt-grey-left-small {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/txt-grey-left-small.gif") no-repeat scroll 0 0;
+    float: left;
+    height: 25px;
+    padding-left: 5px;
+}
+.txt-grey-middle-small {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/txt-grey-mid-small.gif") repeat-x scroll 0 0;
+    border: medium none;
+    color: #2b2a26;
+    display: block;
+    float: left;
+    font-family: Arial,Helvetica,sans-serif !important;
+    font-size: 12px;
+    height: 17px;
+    line-height: 17px;
+    padding: 4px 4px 5px;
+    width: 212px;
+}
+.txt-grey-right-small {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/txt-grey-right-small.gif") no-repeat scroll 0 0;
+    float: left;
+    height: 25px;
+    width: 5px;
+}
+.input-field {
+    float: left;
+    padding: 5px 0 0 10px;
+}
+.txt-white-left-small {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/txt-white-left-small.gif") no-repeat scroll 0 0;
+    float: left;
+    height: 25px;
+    padding-left: 5px;
+}
+.txt-white-middle-small {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/txt-white-mid-small.gif") repeat-x scroll 0 0;
+    border: medium none;
+    color: #2b2a26;
+    display: block;
+    float: left;
+    font-family: Arial,Helvetica,sans-serif !important;
+    font-size: 12px;
+    height: 17px;
+    line-height: 17px;
+    padding: 4px 4px 5px;
+    width: 221px;
+}
+.txt-white-right-small {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/txt-white-right-small.gif") no-repeat scroll 0 0;
+    float: left;
+    height: 25px;
+    width: 5px;
+}
+.white-wrapper {
+    background: #fff none repeat scroll 0 0;
+}
+.white-wrapper .white-wrapper-poy-image {
+    height: 160px;
+    margin-top: 38px;
+    width: 315px;
+}
+.rect-tile-medium .white-wrapper-poy-image {
+    height: 155px;
+    margin-top: -6px;
+    width: 315px;
+}
+.candidate-login {
+    height: 145px;
+    padding: 10px 49px 0 20px;
+}
+.search-jobs {
+    font-weight: bold;
+    height: 280px;
+    padding: 20px 35px 20px 20px;
+}
+.sub-heading {
+    color: #2b2a26;
+    font-family: "ZurichBTBoldCondensed",Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.padding-left20 {
+    padding-left: 20px;
+}
+.margin-top15 {
+    margin-top: 15px;
+}
+.forgot-pwd {
+    color: #2b2a26;
+    float: left;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 15px 0 0 10px;
+}
+.float-right {
+    float: right !important;
+}
+.job-links {
+}
+.job-links li {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/black-bullet.png") no-repeat scroll 0 0;
+    margin-top: 15px;
+    padding-left: 18px;
+}
+.job-links li a {
+    color: #2b2a26;
+    font-size: 12px;
+    font-weight: bold;
+}
+.breadcrumbs {
+    height: 22px;
+    padding-bottom: 2px;
+    padding-top: 4px;
+}
+.breadcrumbs li {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/bread-crumb-icon.png") no-repeat scroll 0 2px;
+    color: #e3b6b8;
+    float: left;
+    font-family: "ZurichBTBoldCondensed",Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    height: 19px;
+    line-height: 21px;
+    margin-left: 10px;
+    padding-left: 26px;
+    text-transform: capitalize !important;
+}
+.breadcrumbs li.first {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    font-weight: bold;
+    margin-left: 0;
+    padding: 3px 0 0;
+}
+.breadcrumbs li a.home {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/home-icon.png") no-repeat scroll 0 0;
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    height: 19px;
+    text-indent: -9999px;
+    width: 23px;
+}
+.health-activity-wrapper {
+    padding: 0 28px 20px;
+}
+.health-activity-wrapper p {
+    line-height: 19px;
+    padding-top: 10px;
+}
+.health-calc {
+    margin-top: 5px;
+}
+.health-calc li {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/red_bullet.gif") no-repeat scroll 2px 0;
+    border: medium none !important;
+    line-height: 16px;
+    padding-bottom: 5px !important;
+    padding-left: 15px !important;
+    width: 97%;
+}
+.health-calc li a {
+    color: #004a80;
+    font-size: 14px;
+}
+.health-calc li a.active {
+    color: #000;
+}
+.health-subhead {
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 15px;
+}
+.scrollbar2 .viewport p {
+    padding-top: 10px;
+}
+.iassureebiscrollbar2 .ebiviewport p {
+    padding-top: 20px;
+}
+.iassureebiscrollbar2 {
+    height: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width: 100%;
+}
+.smartkidebiscrollbar2 .ebiviewport p {
+    padding-top: 20px;
+}
+.smartkidebiscrollbar2 {
+    height: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width: 100%;
+}
+.padding-right0 {
+    padding-right: 0;
+}
+#feedback {
+    position: fixed;
+    right: 0;
+    top: -20px;
+    z-index: 9999;
+}
+.feedback-close {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/feedback-btn.png") no-repeat scroll 0 0;
+    height: 107px;
+    position: absolute;
+    right: 0;
+    top: 210px;
+    width: 31px;
+}
+.feedback-open {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/feedback-btn-toggle.png") no-repeat scroll 0 0;
+    height: 107px;
+    position: absolute;
+    right: 0;
+    top: 210px;
+    width: 31px;
+}
+#feedback-slider, #information-slider {
+    width: 345px;
+}
+#feedback-btn {
+    z-index: 8001;
+}
+#feed-mask {
+    background: #0f0f0f none repeat scroll 0 0;
+    display: none;
+    left: 0;
+    position: absolute;
+    top: 159px;
+    z-index: 8000;
+}
+#feedback-popup {
+    display: none;
+    position: absolute;
+    right: 31px;
+    top: 210px;
+    width: 417px;
+    z-index: 8002;
+}
+#feedback-popup .left-bg {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/feedback-left-bg.png") no-repeat scroll 0 0;
+    float: left;
+    height: 366px;
+    width: 5px;
+}
+#feedback-popup .feedback-content {
+    background-color: #fff;
+    color: #000;
+    float: left;
+    height: 366px;
+    padding: 0 45px 0 10px;
+    width: 352px;
+}
+#feedback-popup .feedback-content p {
+    font-size: 14px;
+    margin: 0;
+    padding: 15px 0 5px;
+}
+#feedback-popup .right-bg {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/feedback-right-bg.png") repeat scroll 0 0;
+}
+.float-right {
+    float: right;
+}
+.slider-bottom, .slider-top {
+    margin: 5px 0;
+}
+.slider-bottom span {
+    padding-left: 78px;
+}
+.pad-0 {
+    padding: 0 !important;
+}
+#feedback-popup .slider-top span {
+    font-family: "ZurichBTBoldCondensed",Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+#feedback-popup .slider-bottom span {
+    font-family: "ZurichBTCondensed",Arial,Helvetica,sans-serif;
+    font-size: 14px;
+}
+.oasis-links {
+    float: left;
+    width: 250px;
+}
+.insurance-links {
+    float: left;
+    width: 520px;
+}
+.oasis-links h3 {
+    font-family: "ZurichBTCondensed",Arial,Helvetica,sans-serif;
+    padding-bottom: 5px;
+    padding-left: 12px;
+    text-transform: uppercase;
+}
+.insurance-links h3 {
+    font-family: "ZurichBTCondensed",Arial,Helvetica,sans-serif;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+.oasis-links ul li a {
+    color: #5e5f60;
+    display: inline;
+    float: none !important;
+    font-size: 12px;
+    padding-bottom: 3px;
+    padding-left: 8px;
+    padding-top: 1px;
+}
+.insurance-links ul li {
+    color: #5e5f60;
+    display: block;
+    float: none !important;
+    font-size: 12px;
+    padding: 2px 0 10px;
+    width: 505px !important;
+}
+.oasis-links ul li {
+    padding: 2px 0;
+    width: 250px !important;
+}
+.oasis-links ul li a span {
+    padding-bottom: 3px;
+    padding-top: 1px;
+}
+.oasis-links ul li a:hover span {
+    background: #fff url("/public/bolimages/site-map-link-hover-right.png") no-repeat scroll right top;
+    color: #fff;
+    padding-right: 3px;
+}
+.oasis-links ul li a:hover {
+    background: #fff url("/public/bolimages/site-map-link-hover-left.png") no-repeat scroll left top;
+    color: #fff;
+}
+.office-address p {
+    color: #5e5f60;
+    float: left !important;
+    font-size: 11px;
+    line-height: 7px !important;
+    margin-top: 4px;
+    padding-top: 9px;
+    width: 900px;
+}
+.fb-like-cls {
+    background: transparent url("/public/bolimages/face-book-like.gif") no-repeat scroll 0 0;
+    height: 77px;
+    position: absolute;
+    right: 0;
+    top: 330px;
+    width: 31px;
+}
+.search-box {
+    padding-top: 12px;
+}
+.search-left-section {
+    background: transparent url("/public/bolimages/search-left-section.gif") no-repeat scroll 0 0;
+    display: block;
+    float: left;
+    height: 27px;
+    width: 133px;
+}
+.search-left-section .search-left-input {
+    background-color: #d8999b;
+    color: #fff;
+    float: left;
+    font-size: 12px;
+    height: 25px;
+    line-height: 26px;
+    margin-left: 8px;
+    margin-top: 1px;
+    padding: 0 0 0 8px;
+    width: 125px;
+}
+#facts-carousel, #media-carousel, #media-carousel1 {
+    height: 120px;
+    width: 308px;
+}
+.facts-carousal {
+    background: #ebeae5 none repeat scroll 0 0 !important;
+    height: 110px;
+    width: 300px;
+}
+.facts-carousal .real-counter-text {
+    margin: 15px 0 0;
+    padding-left: 10px;
+    text-align: left;
+}
+.facts-carousal .real-counter-text, .facts-carousal .real-counter {
+    margin-left: 75px;
+}
+.facts-carousal .real-counter-text-small {
+    float: left;
+    padding: 3px 0 0 40px;
+}
+.tax-heading {
+    font-family: "ZurichBTBoldCondensed",Arial,Helvetica,sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    padding-top: 25px;
+    text-transform: uppercase;
+}
+.Tax-activity-wrapper {
+    padding: 0 28px 20px;
+}
+.Tax-activity-wrapper p {
+    line-height: 19px;
+    padding-top: 25px;
+}
+.Tax-calc {
+    margin-top: 5px;
+    width: 500px;
+}
+.Tax-calc li {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/black-square.gif") no-repeat scroll 0 13px;
+    padding: 10px 0 0 20px;
+}
+.Tax-calc li a {
+    color: #004a80;
+    font-size: 14px;
+}
+.Tax-calc li a.active {
+    color: #000;
+}
+.Tax-calc2 {
+    margin-top: -10px;
+}
+.Tax-calc2 li {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/black-square.gif") no-repeat scroll 0 13px;
+    padding: 10px 0 0 20px;
+}
+.Tax-calc2 li a {
+    color: #004a80;
+    font-size: 14px;
+}
+.Tax-calc2 li a.active {
+    color: #000;
+}
+.white-container-big {
+    background: #fff none repeat scroll 0 0;
+    float: left;
+    height: 465px;
+    padding: 20px 10px 0 20px;
+    width: 950px;
+}
+.white-container-big1 {
+    background: #fff none repeat scroll 0 0;
+    float: left;
+    height: 525px;
+    padding: 20px 10px 0 20px;
+    width: 950px;
+}
+.fund-performance-wrapper {
+    padding: 0 20px;
+}
+.select-fund {
+    float: left;
+    width: 265px;
+}
+.fund-performance-ctnt {
+    float: right;
+    width: 634px;
+}
+.fund-performance-ctnt-navhistory {
+    width: 634px;
+}
+.fixed-heading {
+    font-family: "ZurichBTBoldCondensed",Arial,Helvetica,sans-serif;
+    font-size: 22px;
+    font-weight: normal;
+    padding-top: 30px;
+    text-transform: uppercase;
+}
+.download-link {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/download-icon.gif") no-repeat scroll 0 0;
+    color: #004a80;
+    float: right;
+    font-family: "ZurichBTCondensed",Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    height: 33px;
+    line-height: 33px;
+    padding-left: 41px;
+    text-transform: uppercase;
+}
+.button-link {
+    color: #004a80;
+    float: right;
+    font-family: "ZurichBTCondensed",Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    height: 33px;
+    line-height: 33px;
+    padding-left: 41px;
+    text-transform: uppercase;
+}
+.graph-heading {
+    font-family: "ZurichBTCondensed",Arial,Helvetica,sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    padding-top: 15px;
+}
+.ulif {
+    font-family: "ZurichBTCondensed",Arial,Helvetica,sans-serif;
+    font-size: 14px;
+}
+.padding-left5 {
+    padding-left: 5px;
+}
+.fixed-balance-list {
+    padding-top: 10px;
+}
+.fixed-balance-list li {
+    border-right: 1px solid #d5d4d4;
+    float: left;
+    font-family: "ZurichBTCondensed",Arial,Helvetica,sans-serif;
+    font-size: 13px;
+    height: 64px;
+    padding: 5px 47px 5px 10px;
+    text-transform: uppercase;
+}
+.fixed-balance-list li span {
+    display: block;
+    font-size: 11px;
+    height: 15px;
+}
+.fixed-balance-list li.first {
+    padding-left: 0;
+    width: 107px;
+}
+.fixed-balance-list li.last {
+    border-right: medium none;
+    padding-right: 0;
+    width: 128px;
+}
+.fund-page-heading {
+    font-family: "ZurichBTBoldCondensed",Arial,Helvetica,sans-serif;
+    font-size: 21px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.fund-name {
+    font-family: "ZurichBTBoldCondensed",Arial,Helvetica,sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+.fund-percent {
+    font-family: "ZurichBTBoldCondensed",Arial,Helvetica,sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 0 0 5px;
+}
+.benchmark {
+    font-family: "ZurichBTCondensed",Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+.fund-percent-date {
+    font-family: "ZurichBTBoldCondensed",Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px 0 0 5px;
+}
+.width-137 {
+    width: 138px;
+}
+.width-85 {
+    width: 85px;
+}
+.clear-both {
+    clear: both;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+}
+.margin-bottom10 {
+    margin-bottom: 10px;
+}
+.login-ctnt-wrapper {
+    margin: 0 auto;
+    padding: 20px 0 0;
+    width: 653px;
+}
+.login-ctnt-wrapper label {
+    float: left;
+    font-family: "ZurichBTBoldCondensed",Arial,Helvetica,sans-serif;
+    font-size: 18px;
+    margin-right: 20px;
+    text-transform: uppercase;
+}
+.login-ctnt-wrapper span {
+    color: #333;
+    float: left;
+    padding: 3px 25px 0 8px;
+    vertical-align: top;
+}
+.width-285 {
+    width: 285px;
+}
+.login-popup-button {
+    background: rgba(0, 0, 0, 0) url("../images/client/login-popup-button.png") no-repeat scroll 0 0;
+    cursor: pointer;
+    float: left;
+    height: 32px;
+    margin: 15px 0 0 5px;
+    width: 35px;
+}
+.margin-right7 {
+    margin-right: 7px;
+}
+.login-ctnt-wrapper a {
+    color: #0b273c;
+    float: right;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+.bottom-links {
+  /*  margin: 0 auto; */
+margin: 0 -60px;
+    padding-top: 10px;
+	
+  /*  width: 800px;*/
+}
+.bottom-links li {
+    background: rgba(0, 0, 0, 0) url("../images/client/bottom-links-sprite.gif") no-repeat scroll 0 0;
+    float: left;
+    padding-top: 53px;
+    text-align: center;
+    width: 104px;
+}
+.bottom-links li a {
+    color: #fff;
+    display: block;
+}
+.bottom-links li.buy-online {
+    background-position: center 0;
+}
+.bottom-links li.pay-online {
+    background-position: center -75px;
+}
+.bottom-links li.meet-advisor {
+    background-position: center -150px;
+}
+.bottom-links li.locate-branch {
+    background-position: center -225px;
+}
+.bottom-links li.downloads {
+    background-position: center -300px;
+}
+.bottom-links li.claim {
+    background-position: center -375px;
+}
+.bottom-links li.contact-us {
+    background-position: center -450px;
+}
+.bottom-links li.general-info {
+    background-position: center -525px;
+}
+.rel-pos-div {
+    position: relative;
+}
+.feedback-txt-right {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/feedback-txt-right.gif") no-repeat scroll right 0;
+    float: left;
+}
+.feedback-txt-left {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/feedback-txt-left.gif") no-repeat scroll 0 0;
+    border: medium none;
+    color: #2b2a26;
+    display: block;
+    font-family: Arial,Helvetica,sans-serif !important;
+    font-size: 12px;
+    height: 22px;
+    line-height: 22px;
+    padding: 5px 9px;
+    width: 150px;
+}
+.feedback-form {
+    float: left;
+    padding-top: 20px;
+    width: 169px;
+}
+.margin-top5 {
+    margin-top: 5px !important;
+}
+.feedback-btn-container {
+    margin: 0 auto;
+    width: 80px;
+}
+.media-content {
+    padding: 9px 0 0 35px;
+}
+.media-content h3 {
+    font-size: 14px;
+}
+.media-content p {
+    margin-top: 5px;
+}
+.red-btn-right-small {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/red-btn-right-small.png") no-repeat scroll right 0;
+    float: left;
+}
+.red-btn-left-small {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/red-btn-left-small.png") no-repeat scroll 0 0;
+    border: medium none;
+    color: #fff;
+    cursor: pointer;
+    font-family: "ZurichBTBoldCondensed",Arial,Helvetica,sans-serif;
+    font-size: 16px;
+    line-height: 21px;
+    overflow: visible;
+    padding: 3px 25px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.video-container {
+    float: left;
+    padding-top: 10px;
+}
+.success-stories {
+    float: left;
+    margin-left: 6px;
+    width: 130px;
+}
+.success-stories h2 {
+    border: medium none;
+    font-family: "ZurichBTCondensed",Arial,Helvetica,sans-serif;
+    font-size: 13px;
+    height: 20px;
+    text-transform: uppercase;
+}
+.success-name {
+    float: left;
+    font-family: "ZurichBTBoldCondensed",Arial,Helvetica,sans-serif;
+    font-size: 18px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    width: 600px;
+}
+.success-name span {
+    font-family: "ZurichBTCondensed",Arial,Helvetica,sans-serif;
+    font-size: 14px;
+}
+.tele-ads {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #ccc;
+    float: left;
+    height: 146px;
+    margin: 10px 8px 0 0;
+    overflow: hidden;
+    width: 180px;
+}
+.tele-ads a {
+    display: block;
+    height: 134px;
+    overflow: hidden;
+    padding: 6px;
+    width: 168px;
+}
+.tele-ads a img {
+    display: block;
+}
+.tele-ads a span {
+    color: #2b2a26;
+    cursor: pointer;
+    display: block;
+    font-family: "ZurichBTBoldCondensed",Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: left;
+    text-transform: uppercase;
+    width: 168px;
+}
+.bod {
+    height: 183px;
+}
+.bod a {
+    height: 171px !important;
+}
+.bod a span {
+    line-height: 12px;
+}
+.text-red {
+    color: #ad292f !important;
+}
+.join-us-tile {
+    background: #f07b1f url("/public/bolimages/join-us-icon.gif") no-repeat scroll center 40px;
+    padding-top: 85px;
+}
+.redressal a {
+    color: #ac292e;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.redressal-steps {
+    overflow: hidden;
+    width: 890px;
+}
+.redressal-steps p {
+    line-height: 2;
+    margin-top: 15px;
+}
+.redressal-steps-left {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/redressal-steps.gif") no-repeat scroll 0 0;
+    color: #fff;
+    float: left;
+    font-size: 14px;
+    height: 20px;
+    margin: 30px 25px 0 0;
+    padding: 5px 0 0 13px;
+    width: 52px;
+}
+.redressal-steps-right {
+    float: left;
+    width: 800px;
+}
+.redressal-steps span {
+    font-weight: bold;
+}
+.ins-invest {
+    padding-top: 0;
+}
+.ins-invest p {
+    margin-top: 0 !important;
+    padding-top: 0;
+}
+.ins-invest span {
+    font-weight: bold;
+}
+.ins-invest h2 {
+    color: #2b2a26;
+    font-family: "ZurichBTCondensed",Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    margin-top: 30px;
+    text-align: left;
+    text-transform: uppercase;
+}
+.padding-top20 {
+    padding-top: 20px;
+}
+.steps-arrow {
+    float: right;
+    margin: 20px 25px 0 0;
+}
+.height-410 {
+    height: 410px !important;
+}
+.height-330 {
+    height: 350px !important;
+}
+.nri-corner-links {
+    padding-top: 20px;
+}
+.nri-corner-links li {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/black-square.gif") no-repeat scroll 0 3px;
+    float: left;
+    margin-right: 27px;
+    padding-left: 20px;
+}
+.nri-corner-links li a {
+    color: #ac292e;
+    font-weight: bold;
+}
+.margin-top35 {
+    margin-top: 35px !important;
+}
+.fund-performance-ctnt p {
+    padding-top: 20px;
+}
+.height-300 {
+    height: 300px !important;
+}
+.width-630 {
+    width: 630px !important;
+}
+.alphabet-links {
+    border-top: 1px solid #ccc;
+    margin-top: 21px;
+    padding: 8px 0 0 48px;
+}
+.alphabet-links li {
+    float: left;
+}
+.alphabet-links li a {
+    color: #666;
+    display: block;
+    font-family: "ZurichBTBoldCondensed",Arial,Helvetica,sans-serif;
+    font-size: 18px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 34px;
+}
+.alphabet-links li a:hover, .alphabet-links li a.active {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/alphabet-bg.gif") no-repeat scroll 0 0;
+    color: #fff;
+}
+.alpha-links {
+    border-top: 1px solid #ccc;
+    margin: 50px 65px 0 27px;
+    padding-top: 15px;
+}
+.alpha-links li {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/grey-bullet.gif") no-repeat scroll 0 center;
+    float: left;
+    padding: 0 5px 0 7px;
+}
+.alpha-links li a {
+    color: #666;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.alpha-links li a:hover, .alpha-links li a.active {
+    color: #ac292e;
+}
+.alpha-links li.first {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    padding-left: 0;
+}
+.pure-protect-wrapper {
+    height: 458px;
+    padding: 20px 6px 7px;
+    width: 638px;
+}
+.protect-heading {
+    color: #004a80;
+    font-family: "ZurichBTBoldItalic",Arial,Helvetica,sans-serif;
+    font-size: 34px;
+    font-style: italic;
+    line-height: 30px;
+    padding: 0 0 0 7px;
+}
+.protect-heading span, .oasis-pru span {
+    color: #f58220;
+    word-spacing: -1px;
+}
+.protect-heading1 {
+    color: #004a80;
+    font-family: "ZurichBTBoldItalic",Arial,Helvetica,sans-serif;
+    font-size: 28px;
+    line-height: 30px;
+    padding: 0 0 0 7px;
+}
+.protect-heading1 span, .oasis-pru span {
+    color: #f58220;
+}
+.oasis-pru {
+    color: #004a80;
+    font-family: "ZurichBTBoldItalic",Arial,Helvetica,sans-serif;
+    font-size: 19px;
+    font-style: italic;
+    line-height: 20px;
+    padding: 0 0 0 15px;
+    text-transform: uppercase;
+}
+.shopping {
+    float: right;
+}
+.shopping li {
+    float: left;
+    margin: 0 8px 0 3px;
+}
+.shopping li a {
+    display: block;
+    font-size: 0;
+    height: 48px;
+    width: 49px;
+}
+.shopping li a.credit-card {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/credit-card.gif") no-repeat scroll 0 0;
+}
+.shopping li a.shopping-cart {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/shopping-cart.gif") no-repeat scroll 0 0;
+}
+.shopping li a.meet-advisor {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/meet-an-advisor.gif") no-repeat scroll center 0;
+    width: auto;
+}
+.pure-protect {
+    background: #dfded6 none repeat scroll 0 0;
+    height: 356px;
+    margin-top: 20px;
+    padding: 2px 2px 20px;
+    width: 634px;
+}
+.margin-top0 {
+    margin-top: 0 !important;
+}
+.glance-left {
+    float: left;
+    margin-right: 30px;
+    width: 280px;
+}
+.glance-right {
+    float: right;
+    width: 275px;
+}
+.para-head {
+    font-family: "ZurichBTBoldCondensed",Arial,Helvetica,sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+.detail-links {
+    float: right;
+}
+.detail-links li {
+    float: left;
+    margin-left: 4px;
+}
+.detail-links li a {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/elite-bg.gif") no-repeat scroll 0 0;
+    color: #575756;
+    display: block;
+    font-family: "ZurichBTBoldCondensed",Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    height: 21px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 73px;
+}
+.detail-links li a:hover, .detail-links li a.active {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/classic-bg.gif") no-repeat scroll 0 0;
+    color: #fff;
+}
+.detail-ctnt {
+    float: left;
+    margin-top: 15px;
+    width: 100%;
+}
+.detail-ctnt-row {
+    border-bottom: 1px solid #bdbcb5;
+    color: #2b2a26;
+    font-weight: bold;
+    line-height: 29px;
+}
+.detail-ctnt-row span {
+    float: right;
+    font-weight: normal;
+}
+.detail-ctnt .first {
+    border-top: 1px solid #bdbcb5;
+}
+.people-content {
+    padding: 15px 0 0 24px;
+}
+.people-content p {
+    color: #004a80;
+    font-family: "ZurichBTBoldItalic",Arial,Helvetica,sans-serif;
+    font-size: 21px;
+    line-height: 22px;
+    padding: 0 0 0 7px;
+}
+.people-content p.small {
+    font-family: "ZurichBTItalic",Arial,Helvetica,sans-serif;
+    font-size: 15px;
+    line-height: 15px;
+}
+.people-content p span {
+    color: #f58220;
+}
+.padding-left0 {
+    padding-left: 0 !important;
+}
+.people-content a {
+    display: block;
+    float: left;
+    font-size: 0;
+    height: 33px;
+    margin-top: 10px;
+    width: 33px;
+}
+.info {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/info-icon.gif") no-repeat scroll 0 0;
+    margin-right: 5px;
+}
+.shop {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/shopping-cart-icon.gif") no-repeat scroll 0 0;
+}
+.view {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/view-icon.gif") no-repeat scroll right 7px;
+    padding-right: 19px;
+    width: 123px !important;
+}
+.meet {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/meet-an-advisor-small.gif") no-repeat scroll 0 0;
+}
+.info-calc-container {
+    color: #333;
+    font-family: "ZurichBTBoldCondensed",Arial,Helvetica,sans-serif;
+    padding-left: 28px;
+    text-transform: uppercase;
+}
+.info-calc-container h2 {
+    font-size: 16px;
+    font-weight: normal;
+}
+.info-calc-content {
+    float: left;
+    height: 235px;
+    margin-top: 15px;
+    width: 460px;
+}
+.info-calc-content .slider-top {
+    font-size: 16px;
+}
+.info-calc-content .red-text {
+    color: #d42800;
+    padding-left: 10px;
+}
+.body-index {
+    width: 400px;
+}
+.body-index .slider-bottom span {
+    padding-left: 46px;
+}
+.gender-female {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/gender-sprite.gif") no-repeat scroll left top;
+    float: left;
+    height: 202px;
+    margin-right: 17px;
+    padding: 5px 0 0 5px;
+    width: 142px;
+}
+.gender-male {
+    background-position: -147px top;
+}
+.calculate-btn {
+    float: left;
+    padding: 8px 0 12px 420px;
+}
+.info-calc-bottom {
+    background: #dfded6 none repeat scroll 0 0;
+    color: #333;
+    float: left;
+    font-family: "ZurichBTBoldCondensed",Arial,Helvetica,sans-serif;
+    height: 73px;
+    margin: 6px;
+    padding: 20px 0 10px 40px;
+    text-transform: uppercase;
+    width: 928px;
+}
+.result {
+    float: left;
+    font-size: 24px;
+    margin: 20px 50px 0 0;
+}
+.results-bottom {
+    color: #004a80;
+    font-size: 28px;
+    padding-top: 5px;
+    text-transform: none;
+}
+.results-bottom .min-max {
+    color: #333;
+    font-size: 14px;
+}
+.info-calc-bottom ul {
+    float: left;
+}
+.info-calc-bottom ul li {
+    border-left: 1px solid #999;
+    float: left;
+    height: 70px;
+    padding: 0 70px 0 10px;
+}
+.info-calc-bottom ul li h4 {
+    font-size: 16px;
+    font-weight: normal;
+}
+.label-text {
+    color: #333;
+    font-family: "ZurichBTCondensed",Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    padding-left: 5px;
+    text-transform: none;
+}
+.height-slider .slider-bottom span {
+    padding-left: 52px;
+}
+.calorie-calc {
+    width: 427px;
+}
+.info-calc-content2 {
+    float: left;
+    height: 225px;
+    margin-top: 25px;
+    width: 410px;
+}
+.margin-top50 {
+    margin-top: 50px;
+}
+.calorie-calc .slider-bottom span {
+    padding-left: 207px;
+}
+.padding-bottom6 {
+    padding-bottom: 6px;
+}
+.activity-slider .slider-bottom span {
+    font-family: "ZurichBTCondensed",Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    padding-left: 44px;
+    text-transform: none;
+}
+.height-275 {
+    height: 275px;
+}
+.info-calc-bottom ul li.last {
+    border-bottom: medium none;
+    padding-right: 0 !important;
+}
+.info-calc-bottom ul li h5 {
+    font-size: 14px;
+    font-weight: normal;
+}
+.ratio-list li {
+    border-left: medium none !important;
+    padding: 0 50px 0 45px !important;
+}
+.ratio-list li .male, .ratio-list li .female {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/ratio-icons.gif") no-repeat scroll 0 0;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    line-height: 14px;
+    margin-top: 8px;
+    padding-left: 22px;
+    text-transform: none;
+}
+.ratio-list li .male {
+    background-position: 0 0;
+    padding-top: 3px;
+}
+.ratio-list li .female {
+    background-position: 0 -21px;
+    padding-top: 5px;
+}
+.income-slider .slider-bottom span {
+    padding-left: 43px;
+}
+.info-calc-bottom ul li.first {
+    border: medium none;
+    padding-left: 0 !important;
+}
+.term-calc .info-calc-bottom {
+    height: 83px;
+    padding: 10px 0 10px 15px;
+    width: 953px;
+}
+.term-calc .info-calc-bottom ul li {
+    border-bottom: medium none;
+    height: 60px;
+}
+.recommend {
+    font-size: 16px;
+    padding-bottom: 4px;
+}
+.term-calc .info-calc-bottom ul li h4 {
+    font-family: "ZurichBTCondensed",Arial,Helvetica,sans-serif;
+    font-size: 14px;
+}
+.term-calc .info-calc-bottom ul li .results-bottom {
+    font-size: 37px;
+}
+.term-calc .info-calc-bottom ul li .results-bottom span {
+    color: #2b2a26;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.term-calc .info-calc-bottom ul li .people-content {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/info-icon.gif") no-repeat scroll 4px 9px;
+    padding: 7px 0 0 50px;
+}
+.bought {
+    font-family: "ZurichBTCondensed",Arial,Helvetica,sans-serif;
+    font-size: 16px;
+    padding: 10px 0 0 20px;
+}
+.bought span {
+    font-family: "ZurichBTBoldCondensed",Arial,Helvetica,sans-serif;
+}
+.term-plan-row {
+    border-top: 1px solid #bdbdbd;
+    margin-top: 5px;
+    padding: 10px 0 5px;
+}
+.term-plan-row.last {
+    border-bottom: 1px solid #bdbdbd;
+}
+.cover-slider {
+    width: 540px;
+}
+.cover-slider .red-text {
+    color: #ac292f;
+    font-family: "ZurichBTBoldCondensed",Arial,Helvetica,sans-serif;
+    font-size: 36px;
+    line-height: 32px !important;
+    margin-top: 10px !important;
+}
+.cover-slider .slider-top {
+    margin: 5px 0 10px;
+}
+.cover-slider .slider-bottom span {
+    font-family: "ZurichBTCondensed",Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    padding-left: 38px;
+}
+.premium .slider-bottom span {
+    padding-left: 162px;
+}
+.add-benefit {
+    float: left;
+    font-family: "ZurichBTCondensed",Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    padding: 3px 0 0 10px;
+    text-transform: uppercase;
+}
+.add-benefit span {
+    color: #ae292f;
+    font-family: "ZurichBTBoldCondensed",Arial,Helvetica,sans-serif;
+}
+.right-white-container {
+    background: #fff none repeat scroll 0 0;
+    height: 465px;
+    padding: 10px 7px;
+}
+.red-btn-right-tiny {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/red-btn-right-tiny.gif") no-repeat scroll right 0;
+    float: left;
+}
+.red-btn-left-tiny {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/red-btn-left-tiny.gif") no-repeat scroll 0 0;
+    border: medium none;
+    color: #fff;
+    cursor: pointer;
+    font-family: "ZurichBTBoldCondensed",Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    line-height: 17px;
+    overflow: visible;
+    padding: 3px 15px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.summary-tbl {
+    margin-top: 20px;
+}
+.summary-tbl td {
+    background: #f9b780 none repeat scroll 0 0;
+    border-bottom: 1px solid #fff;
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+    height: 29px;
+    line-height: 29px;
+    padding: 5px 7px 5px 10px;
+}
+.summary-tbl td.last {
+    font-weight: normal;
+    text-align: right;
+}
+.summary-tbl .orange td {
+    background: #f48020 none repeat scroll 0 0;
+}
+.summary-tbl .total td {
+    background: #313030 none repeat scroll 0 0;
+    color: #fff;
+}
+.summary-tbl .total td span, .summary-tbl .total td a {
+    color: #8f8e8e;
+    font-size: 12px;
+}
+.summary-tbl .total td a {
+    text-decoration: underline;
+}
+.agree {
+    float: left;
+    font-size: 12px;
+    padding: 4px 0 0 10px;
+}
+.agree a {
+    color: #004a80;
+}
+.buy-now {
+    border-top: 1px solid #bdbdbd;
+    float: left;
+    margin-top: 10px;
+    padding-top: 20px;
+    width: 100%;
+}
+.buy-now a {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/shopping-cart-big.gif") no-repeat scroll center 0;
+    color: #004a80;
+    display: block;
+    font-family: "ZurichBTBoldCondensed",Arial,Helvetica,sans-serif;
+    font-size: 18px;
+    margin: 0 auto;
+    padding-top: 68px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 64px;
+}
+.internal-popup {
+    background: #fff none repeat scroll 0 0;
+    height: 400px;
+    padding: 25px 5px 10px 25px;
+    position: absolute;
+    top: 210px;
+    width: 621px;
+}
+.internal-popup .closeX {
+    font-family: "ZurichBTBoldCondensed",Arial,Helvetica,sans-serif;
+    font-size: 13px;
+    height: 21px;
+    padding-left: 12px;
+    padding-top: 5px;
+    position: absolute;
+    right: -6px;
+    top: -26px;
+    width: 71px;
+}
+.internal-popup-content {
+    padding-right: 50px;
+    width: 576px;
+}
+.internal-popup-content p {
+    border-bottom: 1px solid #ccc;
+    padding: 25px 0;
+}
+.margin-top25 {
+    margin-top: 0 !important;
+}
+.width-100per {
+    width: 100%;
+}
+.small-selectbox select {
+    min-width: 69px;
+    width: 69px;
+}
+.small-selectbox a {
+    margin-right: 5px;
+    min-width: 66px;
+    width: 66px;
+}
+.small-selectbox .selectBox-label {
+    width: 38px;
+}
+.mandatory {
+    color: #ff0000;
+}
+.terms_red {
+    color: #ae292f;
+}
+.note {
+    margin-top: 10px;
+}
+.note_txt {
+    font-size: 12px;
+    font-weight: bold;
+}
+.padding-top40 {
+    padding-top: 40px;
+}
+.height-340 {
+    height: 340px !important;
+}
+.number-list li {
+    list-style-type: decimal;
+    margin-left: 18px;
+}
+.margin-top160 {
+    margin-top: 160px;
+}
+.margin-right25 {
+    margin-right: 25px;
+}
+.margin-right245 {
+    margin-right: 245px;
+}
+.height-297 {
+    height: 297px !important;
+}
+.width-275 {
+    width: 275px;
+}
+.viewport-onlineClaim {
+    height: 430px;
+    overflow: hidden;
+    position: relative;
+    width: 575px;
+}
+.white-container2-onlineClaim {
+    background: #fff none repeat scroll 0 0;
+    float: left;
+    height: 475px;
+    padding: 20px 0 0;
+    width: 815px;
+}
+#edit-conditions {
+    height: 110px;
+}
+.OnlineClaimTooltip {
+    color: blue;
+    text-decoration: underline;
+}
+.datepicker-txt-left-claim {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/smartkid/dd-left.gif") no-repeat scroll 0 0;
+    float: left;
+    height: 25px;
+    margin-left: 8px;
+    margin-right: 2px;
+    padding-left: 3px;
+    padding-top: 3px;
+    position: relative;
+}
+.txt-white-middle-small-claim {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/txt-white-mid-small.gif") repeat-x scroll 0 0;
+    border: medium none;
+    color: #2b2a26;
+    display: block;
+    float: left;
+    font-family: Arial,Helvetica,sans-serif !important;
+    font-size: 12px;
+    height: 17px;
+    line-height: 17px;
+    padding: 4px 4px 5px;
+    width: 180px;
+}
+.brouchers-bg {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/brouchers-tab-bg.gif") no-repeat scroll right bottom !important;
+}
+#innertabs .innertabsHeight-270 {
+    height: 200px;
+    width: 600px;
+}
+.paragraph {
+    color: #ae292f;
+    font-size: 15px;
+    font-weight: bold;
+    padding-left: 12px;
+    text-transform: uppercase;
+}
+.innertabsHeight-100 {
+    height: 100px;
+    width: 400px;
+}
+.innertabsHeight-300 {
+    height: 100px;
+    width: 400px;
+}
+.pure-protect-wrapper2 {
+    height: 306px;
+    padding: 7px 6px;
+    width: 638px;
+}
+.highlight {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/triangle-arrow.gif") no-repeat scroll center top !important;
+    display: block;
+    float: left;
+    height: 42px;
+    margin-left: 1px;
+    z-index: 1;
+}
+.slider-list {
+    height: 54px;
+}
+.slider-list li {
+    display: block;
+    float: left;
+    margin-left: 1px;
+    margin-right: 1px;
+    padding-top: 12px;
+}
+.slider-list li a {
+    background: #cdccc1 none repeat scroll 0 0;
+    color: #2b2a26;
+    display: block;
+    font-family: "ZurichBTBoldCondensed",Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    height: 32px;
+    line-height: 32px;
+    padding: 5px 0;
+    text-align: center;
+    text-transform: uppercase;
+    width: 143px;
+}
+.highlight a {
+    background: #004a80 none repeat scroll 0 0 !important;
+    color: #fff !important;
+    cursor: default;
+}
+#back {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/back-arrow.png") no-repeat scroll 0 0;
+    float: left;
+    height: 42px;
+    margin-top: 12px;
+    width: 29px;
+}
+#next {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/next-arrow.png") no-repeat scroll 0 0;
+    float: right;
+    height: 42px;
+    margin-top: 12px;
+    width: 28px;
+}
+.show-hide-div {
+    height: 262px;
+    margin: 0;
+    padding: 0;
+    width: 638px;
+}
+.tab-slider {
+    left: 0;
+    position: absolute;
+    top: 252px;
+    width: 638px;
+}
+.scroll-cls {
+    float: left;
+    height: 54px;
+    overflow: hidden;
+    width: 581px;
+}
+.trigle-cls {
+    height: 12px;
+    position: relative;
+    top: 5px;
+    width: 24px;
+}
+.show-hide-div-details {
+    background: #dfded6 url("/public/bolimages/rural-plan-masthed.jpg") no-repeat scroll right bottom;
+    height: 227px;
+    padding: 25px 320px 10px 18px;
+}
+.pure-protect-list {
+    padding-top: 20px;
+}
+.pure-protect-list li {
+    float: left;
+    padding-right: 10px;
+}
+.pure-protect-list li a {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/pure-protect-sprite.gif") no-repeat scroll 0 0;
+    color: #004a80;
+    display: block;
+    padding-top: 49px;
+    text-align: center;
+    width: 52px;
+}
+.pure-protect-list li a.more-info {
+    background-position: 0 0;
+}
+.pure-protect-list li a.brochure {
+    background-position: 0 -64px;
+}
+.pure-protect-list li a.premium {
+    background-position: 0 -128px;
+    color: #ad292f;
+}
+.pure-protect-list li a.shopping-cart {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/shopping-cart.png") no-repeat scroll 0 0;
+}
+.pure-protect-list li a.meet-advisor {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/meet-an-advisor.gif") no-repeat scroll center 0;
+    width: auto;
+}
+.pure-protect-list1 {
+    padding-top: 20px;
+}
+.pure-protect-list1 li {
+    float: left;
+    margin-top: 91px;
+    padding-right: 10px;
+}
+.pure-protect-list1 li a {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/pure-protect-sprite.gif") no-repeat scroll 0 0;
+    color: #004a80;
+    display: block;
+    padding-top: 49px;
+    text-align: center;
+    width: 52px;
+}
+.pure-protect-list1 li a.more-info {
+    background-position: 0 0;
+}
+.pure-protect-list1 li a.brochure {
+    background-position: 0 -63px;
+}
+.pure-protect-list1 li a.premium {
+    background-position: 0 -128px;
+    color: #ad292f;
+}
+.pure-protect-list1 li a.shopping-cart {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/shopping-cart.png") no-repeat scroll 0 0;
+}
+.pure-protect-list1 li a.meet-advisor {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/meet-an-advisor.gif") no-repeat scroll center 0;
+    width: auto;
+}
+.margin-left60 {
+    margin-left: 60px;
+}
+.font-12 {
+    font-size: 12px;
+}
+.padding-bottom20 {
+    padding-bottom: 20px;
+}
+.term-plan {
+    height: 310px;
+    padding: 10px 5px 0;
+}
+.term-plan-btn {
+    float: none;
+    margin: 0 auto;
+    width: 167px;
+}
+.app-sms-section {
+    border-bottom: 1px solid #d5d5d5;
+    clear: both;
+    float: left;
+    width: 100%;
+}
+.app-tracker-submit {
+    margin-left: 340px;
+    margin-top: 20px;
+}
+.app-sms-img {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/mobile-hand.gif") no-repeat scroll left top;
+    clear: both;
+    float: left;
+    height: 193px;
+    width: 201px;
+}
+.app-sms-text {
+    float: left;
+    margin: 70px 0 0 30px;
+}
+.app-sms-text h3 {
+    color: #004a80;
+    font-family: "ZurichBTBoldCondensed",Arial,Helvetica,sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+}
+.app-sms-text p {
+    font-weight: normal;
+    padding-top: 16px;
+}
+.app-sms-text p span {
+    font-size: 14px;
+    font-weight: bold;
+}
+.sms-note-section {
+    color: #403f3f;
+    float: left;
+    font-size: 12px;
+    padding: 12px;
+}
+.sms-submit-btn {
+    float: left;
+    padding: 20px 0 0 330px;
+}
+.sms-note-section ol {
+    margin-left: 0;
+}
+.row-alternate-color {
+    background: #f3f3f3 none repeat scroll 0 0;
+}
+.width-575 {
+    width: 575px !important;
+}
+.border-0 {
+    border: medium none !important;
+}
+.locator {
+    background-color: rgb(223, 222, 214);
+    height: 100%;
+}
+.locator-details {
+    height: 100%;
+}
+.locator-select {
+    background-color: rgb(223, 222, 214);
+    height: 440px;
+    margin-top: 10px;
+}
+.locator-select p {
+    margin-top: 10px;
+}
+.locator-select-combo {
+    margin: 0 0 5px 20px;
+}
+.locator-address {
+    height: 100%;
+}
+.locator-left-content {
+    background-color: #fff;
+    float: left;
+    height: 475px;
+    overflow: hidden;
+    padding: 5px;
+    width: 310px;
+}
+.locator-right-content {
+    float: right;
+    width: 650px;
+}
+.ui-accordion .ui-accordion-content .selectBox {
+    margin-bottom: 5px;
+}
+.locator-left-content h3 {
+    color: #000000;
+    font-family: "ZurichBTCondensed",Arial,Helvetica,sans-serif;
+    padding-top: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.branch-loc-result {
+    margin-top: 30px;
+}
+.branch-head {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.branch-results {
+    list-style: outside none none;
+}
+.branch-results li {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/locator/branch-result-icon.gif") no-repeat scroll left 3px;
+    margin: 20px 0 15px;
+    padding-left: 27px;
+}
+.height-381 {
+    height: 381px;
+    overflow: hidden;
+}
+.address-record {
+    font-style: normal;
+}
+.address-result {
+    font-size: 12px;
+}
+.height-168 {
+    height: 168px !important;
+}
+.margin-right275 {
+    margin-right: 275px;
+}
+.txt-white-left-small {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/txt-white-left-small.gif") no-repeat scroll 0 0;
+    float: left;
+    height: 25px;
+    padding-left: 5px;
+}
+.txt-white-middle-small {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/txt-white-mid-small.gif") repeat-x scroll 0 0;
+    border: medium none;
+    color: #2b2a26;
+    display: block;
+    float: left;
+    font-family: Arial,Helvetica,sans-serif !important;
+    font-size: 12px;
+    height: 17px;
+    line-height: 17px;
+    padding: 4px 4px 5px;
+    width: 221px;
+}
+.txt-white-right-small {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/txt-white-right-small.gif") no-repeat scroll 0 0;
+    float: left;
+    height: 25px;
+    width: 5px;
+}
+.width-218 {
+    width: 218px;
+}
+.width-233 {
+    width: 233px;
+}
+.margin-top115 {
+    margin-top: 115px;
+}
+.smart-kid {
+    background: #ebeae5 none repeat scroll 0 0;
+    color: #004a80;
+    font-family: "ZurichBTBoldItalic",Arial,Helvetica,sans-serif;
+    font-size: 18px;
+    height: 96px;
+    padding: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 119px;
+}
+.smart-kid-txt {
+    margin: 8px auto 0;
+    width: 77px;
+}
+.smart-kid-txt span.text {
+    color: #f58220;
+    display: inline;
+    font-family: "ZurichBTBoldItalic",Arial,Helvetica,sans-serif;
+    font-size: 18px;
+    line-height: normal;
+    text-align: center;
+    text-decoration: none;
+}
+.smart-kid-txt .smart-kid-icons {
+    margin-top: 15px;
+}
+.smart-kid-txt .smart-kid-icons img {
+    display: inline !important;
+    height: 33px !important;
+    width: 33px !important;
+}
+.width-265 {
+    width: 265px;
+}
+.sub-heading span {
+    color: #ae292f;
+}
+.prev {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/prev-icon.gif") no-repeat scroll 0 0;
+    display: block;
+    float: left;
+    height: 34px;
+    margin-left: 12px;
+    width: 34px;
+}
+.margin-left10 {
+    margin-left: 10px !important;
+}
+.width-145 {
+    width: 145px;
+}
+.banking {
+    float: right;
+    margin-right: 17px;
+}
+.banking li {
+    float: left;
+    margin-left: 10px;
+}
+.banking li a {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/banking-sprite.gif") no-repeat scroll 0 0;
+    display: block;
+    height: 34px;
+    width: 34px;
+}
+.banking li a.banking1 {
+    background-position: 0 0;
+}
+.banking li a.banking2 {
+    background-position: -34px 0;
+}
+.banking li a.banking3 {
+    background-position: -68px 0;
+}
+.banking li a.banking4 {
+    background-position: -102px 0;
+}
+.banking li a.edit-profile {
+    background-position: -136px 0;
+    color: #004a80;
+    font-weight: bold;
+    padding-left: 40px;
+    width: 45px;
+}
+.width-795 {
+    width: 795px !important;
+}
+.width-770 {
+    width: 770px !important;
+}
+.height-405 {
+    height: 405px !important;
+}
+.red-link {
+    color: #ae292f;
+    font-weight: bold;
+}
+.line-height22 {
+    line-height: 22px;
+}
+.banking .input-field {
+    line-height: 25px;
+}
+.padding-left15 {
+    padding-left: 15px;
+}
+.width-790 {
+    width: 790px !important;
+}
+.width-221 {
+    width: 221px !important;
+}
+.width-234 {
+    width: 234px;
+}
+.padding-top0 {
+    padding-top: 0;
+}
+.profile-subhead {
+    font-family: "ZurichBTBoldCondensed",Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 5px;
+    padding-left: 3px;
+    text-transform: uppercase;
+}
+.notice-wrapper {
+    padding: 35px 28px 0;
+}
+.font-bold {
+    font-weight: bold;
+}
+.font-blue {
+    color: #3b5ba2;
+}
+.margin-top95 {
+    margin-top: 95px;
+}
+.note-list {
+    float: left;
+    padding-left: 20px;
+    width: 850px;
+}
+.note-list li {
+    line-height: 25px;
+    list-style: outside none decimal;
+    margin-left: 20px;
+}
+.red-btn-right-large {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/red-btn-right-large.gif") no-repeat scroll right 0;
+    float: left;
+}
+.red-btn-left-large {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/red-btn-left-large.gif") no-repeat scroll 0 0;
+    border: medium none;
+    color: #fff;
+    cursor: pointer;
+    font-family: "ZurichBTBoldCondensed",Arial,Helvetica,sans-serif;
+    font-size: 18px;
+    line-height: 25px;
+    overflow: visible;
+    padding: 6px 25px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.margin-left490 {
+    margin-left: 490px;
+}
+.redtxt {
+    color: #ff0000;
+}
+.radio-field {
+    padding-top: 10px;
+}
+.radio-label {
+    float: left;
+}
+.radio-label label {
+    border: medium none;
+    display: inline;
+    float: none;
+    font-weight: normal;
+    line-height: 15px;
+    padding-left: 10px;
+    padding-right: 20px;
+    width: auto;
+}
+.height-150 {
+    height: 150px !important;
+}
+.height-200 {
+    height: 200px !important;
+}
+.height-250 {
+    height: 250px !important;
+}
+.height-100 {
+    height: 140px !important;
+}
+.dashcheckbx .checkbox-grad {
+    clear: none;
+}
+.dashcheckbx {
+    color: #fff;
+    font-family: "ZurichBTBoldCondensed",Arial,Helvetica,sans-serif;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+.dashcheckbx label {
+    display: block;
+    float: left;
+    margin-right: 10px;
+}
+.label-span {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: normal;
+}
+.padding-right182 {
+    padding-right: 182px;
+}
+.width-772 {
+    width: 772px;
+}
+.height-45 {
+    height: 45px !important;
+}
+.label-big {
+    line-height: normal !important;
+}
+.padding-top15 {
+    padding-top: 15px;
+}
+.height-30 {
+    height: 30px !important;
+}
+.line-height24 {
+    line-height: 24px !important;
+}
+.padding-top3 {
+    padding-top: 3px;
+}
+.smart-search-box {
+    background: #f07b1f none repeat scroll 0 0;
+    font-family: "ZurichBTBoldCondensed",Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    height: 123px;
+    padding: 10px;
+    text-transform: uppercase;
+}
+.smart-search-box span {
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+}
+.margin-top30 {
+    margin-top: 30px;
+}
+.margin-right30 {
+    margin-right: 30px;
+}
+.smart-search {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/smart-search-bg.png") no-repeat scroll 0 0;
+    height: 42px;
+    width: 588px;
+}
+.smart-search-txt {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: medium none;
+    color: #000;
+    float: left;
+    font-size: 15px;
+    height: 32px;
+    line-height: 32px;
+    padding: 5px 2px 5px 5px;
+    text-transform: uppercase;
+    width: 581px;
+}
+.smart-search-txt1 {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: medium none;
+    color: #000;
+    float: left;
+    font-size: 12px;
+    font-weight: bold;
+    height: 32px;
+    line-height: 32px;
+    padding: 5px 2px 5px 5px;
+    text-transform: uppercase;
+    width: 581px;
+}
+.smart-search-btn {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: medium none;
+    cursor: pointer;
+    float: left;
+    height: 42px;
+    padding: 0;
+    width: 41px;
+}
+.smart-search-ul li {
+    border-right: 1px solid #bfbfbd;
+    cursor: pointer;
+    float: left;
+    height: 35px;
+    line-height: 18px;
+    padding: 0 5px 0 10px;
+    width: 200px;
+}
+.smart-search-ul-child {
+    background-color: #fff;
+    border: 1px solid #e0dada;
+    display: none;
+    position: absolute;
+    top: 37px;
+    z-index: 100;
+}
+.smart-search-ul-child li {
+    background-color: #e9e9e9;
+    border: 2px solid #fff;
+    float: none;
+    font-family: "ZurichBTCondensed",Arial,Helvetica,sans-serif;
+    font-weight: normal;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+.smart-search-ul-child li a {
+    color: #000;
+    font-size: 12px;
+    height: auto;
+    line-height: normal;
+    padding: 10px 15px 10px 10px;
+    width: 125px;
+}
+.smart-search-ul-child li.header {
+    background-color: #fff;
+    font-weight: bold;
+}
+.smart-search-add {
+    color: #004a80 !important;
+    font-family: "ZurichBTBoldItalic",Arial,Helvetica,sans-serif !important;
+    font-size: 14px;
+    line-height: 23px !important;
+    text-transform: none !important;
+    width: auto !important;
+}
+.smart-search-add em {
+    color: #f58220;
+}
+.overflow-visible {
+    overflow: visible !important;
+}
+.width-638 {
+    width: 638px;
+}
+.left-content2 {
+    float: left;
+    height: 465px;
+    width: 815px;
+}
+.dashboard-wrapper {
+    background: #fff none repeat scroll 0 0;
+    height: 294px;
+    padding: 13px 0 13px 18px;
+    width: 797px;
+}
+.banking li a.banking5 {
+    background-position: 0 0;
+    color: #004a80;
+    font-weight: bold;
+    padding-left: 40px;
+    width: auto;
+}
+.banking li a.banking6 {
+    background-position: 0 -34px;
+    color: #004a80;
+    font-weight: bold;
+    height: 25px;
+    padding: 9px 0 0 40px;
+    width: auto;
+}
+.banking li a.banking7 {
+    background-position: 0 -68px;
+    color: #004a80;
+    font-weight: bold;
+    height: 25px;
+    padding: 9px 0 0 40px;
+    width: auto;
+}
+.banking li a.banking8 {
+    background-position: 0 -102px;
+    color: #004a80;
+    font-weight: bold;
+    padding-left: 40px;
+    width: auto;
+}
+.blue-txt {
+    color: #004a80;
+}
+.total-txt {
+    background: #8fb0c7 none repeat scroll 0 0;
+    float: left;
+    font-family: "ZurichBTBoldCondensed",Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    height: 33px;
+    padding: 12px 9px 5px;
+    text-transform: uppercase;
+    width: 75px;
+}
+.total-amt {
+    background: #004a80 none repeat scroll 0 0;
+    color: #fff;
+    float: left;
+    font-family: "ZurichBTBoldCondensed",Arial,Helvetica,sans-serif;
+    font-size: 16px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 34px 0 2px;
+    padding: 10px 0;
+    text-align: center;
+    width: 87px;
+}
+.status-active {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/active-icon.gif") no-repeat scroll 0 0;
+    float: left;
+    margin-right: 20px;
+    padding-left: 19px;
+}
+.lapsed {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/lapsed-icon.gif") no-repeat scroll 0 0;
+    float: left;
+    padding-left: 23px;
+}
+.alert-ctnt {
+    background: #fcefb3 none repeat scroll 0 0;
+}
+.alert-ctnt .subscribe-alert {
+    background: #ad292f url("/public/bolimages/subscribe-icon.gif") no-repeat scroll center 46px;
+    color: #fff;
+    float: right;
+    font-family: "ZurichBTBoldCondensed",Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    height: 43px;
+    padding-top: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 90px;
+}
+.alert-ctnt h3 {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/alert-icon.gif") no-repeat scroll 9px 9px;
+    font-family: "ZurichBTBoldCondensed",Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 25px;
+    padding: 9px 0 0 43px;
+    text-transform: uppercase;
+}
+.form-link {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/form-icon.gif") no-repeat scroll 0 0;
+    display: block;
+    font-family: "ZurichBTBoldCondensed",Arial,Helvetica,sans-serif;
+    font-size: 11px;
+    height: 19px;
+    line-height: 17px;
+    margin-left: 15px;
+    padding-left: 25px;
+    text-transform: uppercase;
+}
+.list-link {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/list-icon.gif") no-repeat scroll 0 0;
+    display: block;
+    font-family: "ZurichBTBoldCondensed",Arial,Helvetica,sans-serif;
+    font-size: 11px;
+    height: 19px;
+    line-height: 17px;
+    margin-left: 15px;
+    padding-left: 25px;
+    text-transform: uppercase;
+}
+.padding-bottom0 {
+    padding-bottom: 0 !important;
+}
+.gray-color {
+    color: #666;
+}
+.custom-row {
+    background: #eae9e9 none repeat scroll 0 0;
+    border-top: 2px solid #fff;
+    height: 26px;
+}
+.custom-alt {
+    background: #f3f3f3 none repeat scroll 0 0 !important;
+}
+.custom-row label {
+    border-right: 3px solid #fff;
+    color: #2b2a26;
+    display: block;
+    float: left;
+    font-size: 12px;
+    font-weight: bold;
+    height: 26px;
+    line-height: 25px;
+    padding-left: 18px;
+    width: 182px;
+}
+.benefit-dtls-table {
+    margin: 10px 0 0 44px;
+    width: 771px;
+}
+.benefit-grid {
+    float: left;
+    margin-top: 15px;
+}
+.design-your-future {
+    background: #fff none repeat scroll 0 0;
+    color: #333;
+    float: left;
+    font-family: "ZurichBTBoldCondensed",Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    height: 80px;
+    padding: 40px 40px 35px;
+    text-transform: uppercase;
+    width: 570px;
+}
+.design-your-future .left {
+    float: left;
+    font-size: 34px;
+    padding-right: 20px;
+    text-align: right;
+    width: 295px;
+}
+.design-your-future .left span {
+    font-size: 14px;
+}
+.design-your-future .left .brown-text {
+    color: #b12c32;
+    font-size: 34px;
+}
+.design-your-future .three-steps {
+    text-transform: uppercase;
+    width: auto;
+}
+.pop-combo-plans {
+    position: relative;
+    z-index: 999;
+}
+.pop-combo-plans .desc-content {
+    left: 0;
+    margin: 50px 10px 0 45px;
+    position: absolute;
+    top: 0;
+    z-index: 9999;
+}
+.pure-protect-smart-kid {
+    font-family: "ZurichBTBoldItalic",Arial,Helvetica,sans-serif;
+    width: 240px;
+}
+.pure-protect-smart-kid p {
+    color: #004a80;
+    font-size: 21px;
+}
+.pure-protect-smart-kid p.font11 {
+    font-size: 12px !important;
+}
+.pure-protect-smart-kid p span {
+    color: #f58220 !important;
+}
+.pure-portect {
+    border-right: 1px solid #c7c6bf;
+    float: left;
+    padding: 3px 0 3px 12px;
+    width: 85px;
+}
+.smartkid-premier {
+    float: left;
+    padding: 3px 15px;
+    width: 108px;
+}
+.margin-top2 {
+    margin-top: 2px;
+}
+.buy-now-shopping {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/shopping-cart-white-bg.gif") no-repeat scroll left top;
+    color: #004a80;
+    float: left;
+    font-size: 12px;
+    font-weight: bold;
+    height: 70px;
+    margin-left: 75px;
+    margin-top: 5px;
+    padding-top: 50px;
+    width: 50px;
+    z-index: 10000;
+}
+.social-heading {
+    color: #2b2a26;
+    float: left;
+    font-family: "ZurichBTCondensed",Arial,Helvetica,sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+.carousel-heading {
+    color: #333;
+    font-family: "ZurichBTCondensed",Arial,Helvetica,sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    height: 23px;
+    text-transform: uppercase;
+}
+.form-page {
+    background: #fff none repeat scroll 0 0;
+    overflow: hidden;
+    padding-bottom: 10px;
+    width: 980px;
+}
+.overflow-hidden {
+    overflow: hidden;
+}
+#content-wrapper-1 {
+    background: #b02a30 url("/public/bolimages/body-bg.png") repeat-x scroll left bottom;
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+#form-pages-shadow {
+    background: transparent url("shadow-for-form-pages.png") no-repeat scroll center top;
+    height: 45px;
+    margin-top: -28px;
+}
+.footer-visa-dtls {
+    height: 45px;
+    margin: 0 auto;
+    padding-left: 380px;
+    width: 600px;
+}
+.appstatus-progressbar {
+    height: 34px;
+    padding-left: 12px;
+}
+.appstatus-progressbar a {
+    cursor: pointer;
+}
+.save-app-form {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/save-icon.gif") no-repeat scroll left top;
+    float: right;
+    margin-top: 15px;
+    padding: 3px 15px 0 30px;
+}
+.form-header-1 {
+    color: #333;
+    font-family: "ZurichBTCondensed",Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    height: 23px;
+    text-transform: uppercase;
+}
+.padding-left8 {
+    padding-left: 8px;
+}
+padding-left5 {
+    padding-left: 5px;
+}
+.width-70per {
+    width: 70%;
+}
+.padding-right10 {
+    padding-right: 10px;
+}
+.position-relative {
+    position: relative;
+}
+.dtl-header {
+    clear: both;
+    float: left;
+    margin-top: 20px;
+    padding: 0 0 10px 25px;
+    width: 97.5%;
+}
+.form-label1-section {
+    float: left;
+    padding-left: 25px;
+    width: 212px;
+}
+.form-label2-section {
+    float: left;
+    padding-left: 25px;
+    width: 274px;
+}
+.form-field1-section {
+    float: left;
+    width: 736px;
+}
+.form-field2-section {
+    float: left;
+    width: 674px;
+}
+.form-row {
+    overflow: hidden;
+    padding: 7px 7px 1px 0;
+    width: 100%;
+}
+.form-row .input-field {
+    color: #000 !important;
+    padding: 0;
+}
+.form-row .label {
+    color: #2b2a26;
+    display: block;
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+.form-row .label span {
+    color: #ad292f;
+}
+.txt-white-left-large {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/txt-white-left-large.gif") no-repeat scroll 0 0;
+    float: left;
+    height: 32px;
+    padding-left: 5px;
+}
+.txt-white-middle-large {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/txt-white-mid-large.gif") repeat-x scroll 0 0;
+    border: medium none;
+    display: block;
+    float: left;
+    font-size: 12px;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 4px;
+    width: 252px;
+}
+.txt-white-right-large {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/txt-white-right-large.gif") no-repeat scroll 0 0;
+    float: left;
+    height: 32px;
+    width: 5px;
+}
+.txt-error-left-large {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/txt-error-left-large.gif") no-repeat scroll 0 0 !important;
+}
+.txt-error-middle-large {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/txt-error-mid-large.gif") repeat-x scroll 0 0 !important;
+}
+.txt-error-right-large {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/txt-error-right-large.gif") no-repeat scroll 0 0 !important;
+}
+.display-none {
+    display: none;
+}
+.correct-input-img {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/correct-input.png") no-repeat scroll left top;
+    float: left;
+    height: 18px;
+    margin: 7px 0 0 10px;
+    width: 18px;
+}
+.incorrect-input-img {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/incorrect-input.PNG") no-repeat scroll left top;
+    color: #c60202;
+    float: left;
+    font-style: italic;
+    height: 18px;
+    margin: 7px 0 0 10px;
+    padding-left: 25px;
+    width: 270px;
+}
+.tooltip-left {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/tooltip-inst-left.png") no-repeat scroll left top;
+    float: left;
+    height: 50px;
+    margin-left: 5px;
+    padding-left: 32px;
+}
+.tooltip-mid {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/tooltip-inst-mid.png") repeat-x scroll 0 0;
+    float: left;
+    font-style: italic;
+    height: 42px;
+    padding: 8px 10px 0 5px;
+    width: 250px;
+}
+.tooltip-right {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/tooltip-inst-right.png") no-repeat scroll left top;
+    float: left;
+    height: 50px;
+    width: 7px;
+}
+.overflow-visible {
+    overflow: visible !important;
+}
+.width-85 {
+    width: 81px !important;
+}
+.margin-right-6 {
+    margin-right: 6px;
+}
+.padding-top15 {
+    padding-top: 15px !important;
+}
+.new-section {
+    border-top: 1px solid #ccc;
+    margin-top: 25px;
+    overflow: hidden;
+}
+.padding-left22 {
+    padding-left: 22px;
+}
+.padding-right35 {
+    padding-right: 35px;
+}
+.long-label {
+    float: left;
+    padding-right: 75px;
+    padding-top: 15px;
+    width: 455px;
+}
+.political-section {
+    border-bottom: 1px solid #ccc;
+    padding: 3px 0 10px 22px;
+}
+.padding-top30 {
+    padding-top: 30px;
+}
+.goto-next-step {
+    float: right;
+    padding: 40px 10px 0 0;
+}
+.border-bottom {
+    border-bottom: 1px solid #ccc;
+}
+.verisign {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/verisign.png") no-repeat scroll 0 0;
+    float: left;
+    height: 30px;
+    padding-right: 20px;
+    width: 71px;
+}
+.mastercard {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/mastercard.png") no-repeat scroll 0 0;
+    float: left;
+    height: 21px;
+    margin-top: 10px;
+    padding-left: 20px;
+    width: 59px;
+}
+.verified-visa {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/verified-visa.png") no-repeat scroll 0 0;
+    float: left;
+    height: 30px;
+    width: 54px;
+}
+.width-245 {
+    width: 245px !important;
+}
+.width-150 {
+    width: 150px !important;
+}
+.width-677 {
+    width: 677px !important;
+}
+.width-180 {
+    width: 180px !important;
+}
+.padding-left90 {
+    padding-left: 90px;
+}
+.font-weight-normal {
+    font-weight: normal !important;
+}
+.feet-inch {
+    float: left;
+    padding: 8px 10px 0 6px;
+}
+.padding-right-80 {
+    padding-right: 80px !important;
+}
+.padding-right-60 {
+    padding-right: 60px !important;
+}
+.form-field1-section-1 {
+    background: #f2f1d9 none repeat scroll 0 0;
+    float: left;
+    height: 14px;
+    margin-left: 1px;
+    padding: 12px 0 15px;
+    width: 717px;
+}
+.form-label1-section-1 {
+    background: #f8b379 none repeat scroll 0 0;
+    float: left;
+    height: 14px;
+    margin-left: 25px;
+    padding: 12px 0 15px;
+    width: 212px;
+}
+.form-label1-section-1 .label, .form-label1-section-2 .label {
+    margin-left: 10px;
+    padding-top: 0;
+}
+.form-field1-section-1 .input-field {
+    margin-left: 10px;
+}
+.form-field1-section-1 .radio-label {
+    width: 150px;
+}
+.padding-top-0 {
+    padding-top: 0 !important;
+}
+.line-height {
+    line-height: 20px;
+}
+.select-all {
+    font-size: 15px;
+    font-weight: bold !important;
+}
+.select-all a {
+    color: #2b2a26;
+}
+.form-row-bg {
+    background: #f2f1d9 none repeat scroll 0 0;
+    margin-left: 25px;
+    padding: 0 !important;
+}
+.form-field1-section-2 {
+    float: left;
+    padding: 4px 0 4px 40px;
+    width: 279px;
+}
+.form-label1-section-2 {
+    float: left;
+    line-height: 17px;
+    padding: 10px 0 13px;
+    width: 610px;
+}
+.form-field1-section-3 {
+    float: left;
+    padding: 10px 0 13px 147px;
+    width: 172px;
+}
+.margin-top75 {
+    margin-top: 75px;
+}
+.background-none {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0 !important;
+}
+.width-930 {
+    width: 930px;
+}
+.form-documents {
+    padding: 20px 25px;
+}
+.document-proof-detail {
+    margin-top: 65px;
+}
+.document-proof-top {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/document-proof-top.gif") no-repeat scroll 0 0;
+    height: 4px;
+    width: 171px;
+}
+.document-proof-bottom {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/document-proof-bottom.gif") no-repeat scroll 0 0;
+    height: 4px;
+    width: 171px;
+}
+.document-proof-content {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: -moz-use-text-color #cfd1d3;
+    border-image: none;
+    border-style: none solid;
+    border-width: medium 1px;
+    font-family: "ZurichBTBoldCondensed",Arial,Helvetica,sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 26px 0 0;
+    text-align: center;
+    text-transform: uppercase;
+    width: 169px;
+}
+.margin-bottom40 {
+    margin-bottom: 40px;
+}
+.margin-right15 {
+    margin-right: 15px;
+}
+.electricity-txt {
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 19px;
+}
+.electricity-img {
+    float: left;
+    margin: 12px 9px 0 8px;
+}
+.electricity-bg {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/bg-electricity-bill.gif") no-repeat scroll left top;
+    float: left;
+    height: 103px;
+    margin-top: 2px;
+    width: 171px;
+}
+.electri-preview {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/preview.gif") no-repeat scroll left top;
+    color: #000;
+    display: block;
+    float: left;
+    margin-left: 12px;
+    margin-top: 23px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    text-transform: uppercase;
+    width: 55px;
+}
+.upload-options {
+    float: left;
+    margin-top: 2px;
+    width: 171px;
+}
+.upload-options a {
+    color: #004a80;
+    font-family: "ZurichBTBoldCondensed",Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.upload-option-partition {
+    border-bottom: 1px solid #e4e4e4;
+    padding: 9px 0 8px;
+    text-align: center;
+}
+.margin-left15 {
+    margin-left: 15px;
+}
+.margin-left5 {
+    margin-left: 5px;
+}
+.margin-left35 {
+    margin-left: 35px;
+}
+.margin-left40 {
+    margin-left: 40px;
+}
+.partition-last {
+    padding: 9px 0;
+}
+.margin-top1 {
+    margin-top: 1px;
+}
+.green-ticked {
+    float: left;
+    margin: 20px 0 0 48px;
+}
+.acknowledge-top {
+    overflow: hidden;
+    padding: 40px 45px 0 35px;
+    width: auto;
+}
+.acknowledge-top img {
+    display: block;
+    float: left;
+}
+.print-download a {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/print-dwld-sprite.gif") no-repeat scroll 0 0;
+    color: #004a80;
+    float: left;
+    font-family: "ZurichBTCondensed",Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    height: 26px;
+    padding: 7px 0 0 38px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.print-download .print {
+    background-position: left top;
+}
+.print-download .download {
+    background-position: left -33px;
+}
+.acknowledge-mid {
+    overflow: hidden;
+    padding: 50px 0 0 60px;
+}
+.acknowledge-bottom {
+    padding-left: 250px;
+    width: 730px;
+}
+.ack-app-details {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/app-details-bg.gif") no-repeat scroll 0 0;
+    color: #fff;
+    float: left;
+    height: 80px;
+    padding: 13px 0 0 20px;
+    text-transform: uppercase;
+    width: 209px;
+}
+.ack-app-details h3 {
+    font-family: "ZurichBTCondensed",Arial,Helvetica,sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+}
+.ack-app-details .code {
+    font-family: "ZurichBTBoldCondensed",Arial,Helvetica,sans-serif;
+    font-size: 30px;
+    margin-top: 10px;
+}
+.padding-left250 {
+    margin-left: 250px;
+}
+#ques-flag {
+    background: #f6923d none repeat scroll 0 0;
+    color: #fff;
+    height: 90px;
+    opacity: 0.9;
+    padding: 10px 15px 0;
+    position: absolute;
+    right: 0;
+    top: 685px;
+    width: 292px;
+}
+#ques-flag a {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/close-ques-flag.png") no-repeat scroll 0 0;
+    display: block;
+    height: 39px;
+    margin: -35px 0 0 -35px;
+    width: 38px;
+}
+.text-white {
+    color: #fff !important;
+}
+.popup-close-btn {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/popup-close.png") no-repeat scroll 0 0;
+    display: block;
+    font-family: "ZurichBTBoldCondensed",Arial,Helvetica,sans-serif;
+    font-size: 11px;
+    height: 21px;
+    left: 552px;
+    padding-left: 7px;
+    padding-top: 5px;
+    position: absolute;
+    text-transform: uppercase;
+    top: -26px;
+    width: 71px;
+}
+.width-350 {
+    width: 350px;
+}
+.margin-left120 {
+    margin-left: 120px;
+}
+.browse-btn {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/browse-btn.png") no-repeat scroll 0 0;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    float: left;
+    font-family: "ZurichBTBoldCondensed",Arial,Helvetica,sans-serif;
+    font-size: 16px;
+    height: 27px;
+    text-transform: uppercase;
+    width: 86px;
+}
+#review-accordion {
+    background: #ae292f none repeat scroll 0 0;
+    margin-top: 20px;
+    padding: 2px 0 1px;
+}
+#review-accordion h3 {
+    border: 3px solid #fff;
+    font-family: "ZurichBTBoldCondensed",Arial,Helvetica,sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+}
+.display-inline-block {
+    display: inline-block;
+}
+.accord-edit-btn {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/accord-edit-btn.gif") no-repeat scroll 0 0;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-family: "ZurichBTBoldCondensed",Arial,Helvetica,sans-serif;
+    font-size: 16px;
+    height: 30px;
+    text-transform: uppercase;
+    width: 96px;
+}
+.review-accordion-content {
+    border-top: 1px solid #c9c9c9;
+}
+.review-accordion-content h4 {
+    border-bottom: 1px solid #c9c9c9;
+    color: #2b2a26;
+    font-family: "ZurichBTCondensed",Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    height: 26px;
+    padding: 12px 0 0 20px;
+    text-transform: uppercase;
+    width: 100%;
+}
+.review-accordion-content .content-row {
+    border-bottom: 1px solid #c9c9c9;
+    color: #161616;
+    font-size: 12px;
+    font-weight: bold;
+    height: 31px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.review-accordion-content .content-row label {
+    background: #f0f0f0 none repeat scroll 0 0;
+    color: #5d5b51;
+    float: left;
+    padding: 8px 0 8px 20px;
+    width: 365px;
+}
+.review-accordion-content .content-row .right {
+    float: left;
+    padding: 3px 0 0 20px;
+    width: 570px;
+}
+.review-accordion-content .content-row p {
+    float: left;
+    padding-top: 5px;
+}
+.steps-tabs {
+    padding: 0 0 0 7px;
+}
+.steps-tabs .tab {
+    background: #f2f1d9 none repeat scroll 0 0;
+    color: #2b2a26;
+    cursor: pointer;
+    float: left;
+    height: 46px;
+    margin-right: 2.6px;
+    padding: 7px 5px;
+    width: 149px;
+}
+.tab .steptext {
+    float: left;
+    height: 35px;
+    width: 100%;
+}
+.tab .step-number {
+    float: left;
+    font-family: "ZurichBTCondensed",Arial,Helvetica,sans-serif;
+    font-size: 33px;
+    font-weight: normal;
+    margin-right: 5px;
+    margin-top: -5px;
+    padding: 0;
+    text-transform: uppercase;
+}
+.tab h2 {
+    float: left;
+    font-family: "ZurichBTCondensed",Arial,Helvetica,sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 15px;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+.tab .percent {
+    float: right;
+    font-family: "ZurichBTCondensed",Arial,Helvetica,sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    margin-top: 15px;
+    text-align: right;
+    width: 24px;
+}
+.white-containera ul {
+    float: left;
+    width: 100%;
+}
+.white-containera #scrollbar1 {
+    margin-top: 10px;
+}
+.white-containera ul {
+    margin: 0;
+    padding: 0;
+}
+.white-containera ul li {
+    border-right: 1px solid #a32636;
+    float: left;
+    line-height: 10px;
+    margin-top: 8px;
+    padding: 0 5px;
+}
+.white-containera ul li a {
+    color: #a32636;
+    font-size: 11px;
+    font-weight: bold;
+}
+.white-containera .paddingR-none {
+    padding: 0 0 0 5px !important;
+}
+.white-containera .paddingL-none {
+    padding: 0 5px 0 0 !important;
+}
+.white-containera .row {
+    float: left;
+    width: 100%;
+}
+.white-containera .sub-heading {
+    color: #2b2a26;
+    font-family: "ZurichBTBoldCondensed",Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: none;
+}
+.white-containera .row .one-column {
+    float: left;
+    margin-top: 0;
+    text-align: justify;
+    width: 229px;
+}
+.white-containera .row .two-column {
+    float: left;
+    margin-top: 0;
+    text-align: justify;
+    width: 402px;
+}
+.white-containera .awd-img {
+    border: 1px solid #e3e3e3;
+    float: left;
+    height: 155px;
+    margin: 0 17px 17px 0;
+    overflow: hidden;
+    width: 154px;
+}
+.white-containera .mrgL-none {
+    margin-left: 0 !important;
+}
+.white-containera .border-none {
+    border: medium none !important;
+}
+.white-containera {
+    background: #fff none repeat scroll 0 0;
+    height: 445px;
+    padding: 20px 17px 20px 28px;
+    width: 605px;
+}
+.white-containera2 {
+    background: transparent none repeat scroll 0 0;
+    padding-bottom: 20px;
+    width: 605px;
+}
+.white-containera2 ul {
+    float: left;
+    width: 100%;
+}
+.white-containera2 #scrollbar1 {
+    margin-top: 10px;
+}
+.white-containera2 ul {
+    margin: 6px 0 0;
+    padding: 0;
+}
+.white-containera2 ul li {
+    border-right: 1px solid #a32636;
+    float: left;
+    line-height: 10px;
+    margin-top: 4px;
+    padding: 0 5px;
+}
+.white-containera2 ul li a {
+    color: #a32636;
+    display: block;
+    font-size: 11px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+.white-containera .icare-benefit li {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/red_bullet.gif") no-repeat scroll 2px 0;
+    border-right: 0 none !important;
+    line-height: 15px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+}
+.white-containera .icare-benefit li a {
+    color: #2b2a26;
+}
+.icare-benefit li {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/red_bullet.gif") no-repeat scroll 2px 0;
+    border: medium none !important;
+    line-height: 16px;
+    padding-bottom: 5px !important;
+    padding-left: 15px !important;
+    padding-top: 0;
+    width: 97%;
+}
+.icare-benefit li a {
+    color: #2b2a26;
+}
+.row-left {
+    display: block;
+    float: left !important;
+    font-weight: bold !important;
+    width: 130px;
+}
+.detail-ctnt-row .row-right {
+    display: block;
+    text-align: left;
+    width: 130px;
+}
+.detail-ctnt2 {
+    display: none;
+}
+.detail-links-new {
+    float: right;
+}
+.detail-links-new li {
+    float: left;
+    margin-left: 4px;
+}
+.detail-links-new li a {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/elite-bg-left.png") no-repeat scroll left top;
+    color: #575756;
+    display: inline-block;
+    font-family: "ZurichBTBoldCondensed",Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    height: 21px;
+    line-height: 21px;
+    padding-left: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.detail-links-new li a span {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/elite-bg-right.png") no-repeat scroll right top;
+    color: #575756;
+    display: inline-block;
+    font-family: "ZurichBTBoldCondensed",Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    padding-right: 10px;
+    text-transform: uppercase;
+}
+.detail-links-new li a:hover, .detail-links-new li a.active {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/classic-bg-left.png") no-repeat scroll left top;
+    color: #fff;
+}
+.detail-links-new li a:hover span, .detail-links-new li a.active span {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/classic-bg-right.png") no-repeat scroll right top;
+    color: #fff;
+    overflow: visible;
+}
+.width-200 {
+    width: 150px !important;
+}
+.ctnt-table {
+    border: 1px solid #000;
+}
+.ctnt-table tr {
+    line-height: 22px;
+}
+.ctnt-table td {
+    border-top: 1px solid #000 !important;
+    padding: 0 30px;
+}
+.ctnt-table th {
+    background: #999 none repeat scroll 0 0;
+    padding: 0 30px;
+    text-align: left;
+}
+.blue-link {
+    color: #3b5ba2 !important;
+    text-decoration: underline;
+}
+.font29 {
+    font-size: 29px !important;
+}
+.red-link {
+    color: #b12830 !important;
+    text-decoration: underline;
+}
+.font26 {
+    font-size: 26px !important;
+}
+.ctnt-table1 {
+    border: 1px solid #000;
+    margin: 10px 0;
+    width: 270px;
+}
+.ctnt-table1 td {
+    border-top: 1px solid #000 !important;
+    font-weight: normal;
+    line-height: 11px;
+    padding: 3px;
+    white-space: normal;
+}
+.ctnt-table1 th {
+    background: #999 none repeat scroll 0 0;
+    line-height: 11px;
+    padding: 3px;
+    text-align: left;
+}
+.ctnt-table2 {
+    border: 1px solid #000;
+    margin: 10px 0;
+    width: 530px;
+}
+.ctnt-table2 td {
+    border-top: 1px solid #000 !important;
+    line-height: 11px;
+    padding: 3px;
+    white-space: normal;
+}
+.ctnt-table2 th {
+    background: #999 none repeat scroll 0 0;
+    line-height: 11px;
+    padding: 3px;
+    text-align: left;
+}
+.ctnt-table3 {
+    border: 1px solid #000;
+}
+.ctnt-table3 tr {
+    line-height: 22px;
+}
+.ctnt-table3 td {
+    border: 1px solid #000 !important;
+    padding: 0 30px;
+    text-align: center;
+}
+.ctnt-table3 th {
+    background: #b12830 none repeat scroll 0 0;
+    border: 1px solid #000 !important;
+    padding: 0 30px;
+    text-align: left;
+}
+.ctnt-table4 {
+    border: 1px solid #000;
+}
+.ctnt-table4 tr {
+    line-height: 22px;
+}
+.ctnt-table4 td {
+    border: 1px solid #000 !important;
+    padding: 0 30px;
+    text-align: left;
+}
+.ctnt-table4 th {
+    background: #b12830 none repeat scroll 0 0;
+    border: 1px solid #000 !important;
+    padding: 0 30px;
+    text-align: left;
+}
+.ctnt-table5 {
+    -moz-border-bottom-colors: none !important;
+    -moz-border-left-colors: none !important;
+    -moz-border-right-colors: none !important;
+    -moz-border-top-colors: none !important;
+    border-color: #000 -moz-use-text-color #000 #000 !important;
+    border-image: none !important;
+    border-style: solid none solid solid !important;
+    border-width: 1px medium 1px 1px !important;
+    margin: 10px 0;
+    width: 730px;
+}
+.ctnt-table5 td {
+    background: #fff none repeat scroll 0 0 !important;
+    border-right: 1px solid #000;
+    border-top: 1px solid #000 !important;
+    line-height: 11px;
+    padding: 3px;
+    white-space: normal;
+}
+.ctnt-table5 th {
+    background: #999999 none repeat scroll 0 0;
+    border-right: 1px solid #000;
+    line-height: 11px;
+    padding: 6px !important;
+    text-align: center;
+}
+.ctnt-table5 p {
+    padding: 0 !important;
+}
+.ctnt-table5 td p span {
+}
+.ctnt-table5 {
+    -moz-border-bottom-colors: none !important;
+    -moz-border-left-colors: none !important;
+    -moz-border-right-colors: none !important;
+    -moz-border-top-colors: none !important;
+    border-color: #dddccb -moz-use-text-color #dddccb #dddccb !important;
+    border-image: none !important;
+    border-style: solid none solid solid !important;
+    border-width: 1px medium 1px 1px !important;
+    margin: 10px 0;
+    width: 730px;
+}
+.ctnt-table5 td {
+    border-right: 1px solid #dddccb;
+    border-top: 1px solid #dddccb !important;
+    line-height: 11px;
+    padding: 3px;
+    white-space: normal;
+}
+.ctnt-table5 th {
+    border-right: 1px solid #dddccb;
+    line-height: 11px;
+    padding: 6px !important;
+    text-align: center;
+}
+.ctnt-table5 p {
+    padding: 0 !important;
+}
+.ctnt-table5 td p span {
+}
+.ctnt-table5 {
+    border: 0 solid #000;
+}
+.ctnt-table4 tr {
+    line-height: 22px;
+}
+.ctnt-table4 td {
+    border: 0 solid #000 !important;
+    padding: 0 30px;
+    text-align: left;
+}
+.ctnt-table4 th {
+    background: #b12830 none repeat scroll 0 0;
+    border: 0 solid #000 !important;
+    padding: 0 30px;
+    text-align: left;
+}
+.width100per {
+    width: 100%;
+}
+.width-400 {
+    width: 400px !important;
+}
+.brd-right {
+    border-right: 1px solid #000;
+}
+.font-i {
+    font-style: italic;
+}
+.single {
+    display: none !important;
+}
+.show-hide-div-details {
+    position: relative;
+}
+.pure-protect-list {
+    bottom: 0;
+    margin-bottom: 10px;
+    position: absolute;
+}
+.lifestage-banner {
+    background: #dfded6 url("/public/bolimages/wealth-plan-masthed.jpg") no-repeat scroll right bottom;
+}
+.lifetime-banner {
+    background: #dfded6 url("/public/bolimages/wealth-plan-masthed.jpg") no-repeat scroll right bottom;
+}
+.pinnacle-banner {
+    background: #dfded6 url("/public/bolimages/wealth-plan-masthed.jpg") no-repeat scroll right bottom;
+}
+.elitelife-banner {
+    background: #dfded6 url("/public/bolimages/wealth-plan-masthed.jpg") no-repeat scroll right bottom;
+}
+.elitewealth-banner {
+    background: #dfded6 url("/public/bolimages/wealth-plan-masthed.jpg") no-repeat scroll right bottom;
+}
+.iassure-banner {
+    background: #dfded6 url("/public/bolimages/wealth-plan-masthed.jpg") no-repeat scroll right bottom;
+}
+.futuresecure-banner {
+    background: #dfded6 url("/public/bolimages/wealth-plan-masthed.jpg") no-repeat scroll right bottom;
+}
+.wholelife-banner {
+    background: #dfded6 url("/public/bolimages/wealth-plan-masthed.jpg") no-repeat scroll right bottom;
+}
+.savenprotect-banner {
+    background: #dfded6 url("/public/bolimages/wealth-plan-masthed.jpg") no-repeat scroll right bottom;
+}
+.cashback-banner {
+    background: #dfded6 url("/public/bolimages/wealth-plan-masthed.jpg") no-repeat scroll right bottom;
+}
+.guaranteedsaving-banner {
+    background: #dfded6 url("/public/bolimages/wealth-plan-masthed.jpg") no-repeat scroll right bottom;
+}
+.WealthProtector-banner {
+    background: #dfded6 url("/public/bolimages/guaranteed_wealth_masthed.jpg") no-repeat scroll right bottom;
+}
+.pureprotect-banner {
+    background: #dfded6 url("/public/bolimages/iCare-banner.jpg") no-repeat scroll right bottom;
+}
+.lifeguard-banner {
+    background: #dfded6 url("/public/bolimages/iCare-banner.jpg") no-repeat scroll right bottom;
+}
+.homeassure-banner {
+    background: #dfded6 url("/public/bolimages/iCare-banner.jpg") no-repeat scroll right bottom;
+}
+.icare-banner {
+    background: #dfded6 url("/public/bolimages/iCare-banner.jpg") no-repeat scroll right bottom;
+}
+.immannuity-banner {
+    background: #dfded6 url("/public/bolimages/retirement-plan-masthed.jpg") no-repeat scroll right bottom;
+}
+.smartkidpremier-banner {
+    background: #dfded6 url("/public/bolimages/child-plan-masthed.jpg") no-repeat scroll right bottom;
+}
+.smartkidrp-banner {
+    background: #dfded6 url("/public/bolimages/child-plan-masthed.jpg") no-repeat scroll right bottom;
+}
+.healthsaver-banner {
+    background: #dfded6 url("/public/bolimages/health-plan-masthed.jpg") no-repeat scroll right bottom;
+}
+.hospitalcare-banner {
+    background: #dfded6 url("/public/bolimages/health-plan-masthed.jpg") no-repeat scroll right bottom;
+}
+.crisiscover-banner {
+    background: #dfded6 url("/public/bolimages/health-plan-masthed.jpg") no-repeat scroll right bottom;
+}
+.creditassure-banner {
+    background: #dfded6 url("/public/bolimages/group-plan-masthed.jpg") no-repeat scroll right bottom;
+}
+.edlischeme-banner {
+    background: #dfded6 url("/public/bolimages/group-plan-masthed.jpg") no-repeat scroll right bottom;
+}
+.groupterm-banner {
+    background: #dfded6 url("/public/bolimages/group-plan-masthed.jpg") no-repeat scroll right bottom;
+}
+.annuitysolution-banner {
+    background: #dfded6 url("/public/bolimages/group-plan-masthed.jpg") no-repeat scroll right bottom;
+}
+.groupleaves-banner {
+    background: #dfded6 url("/public/bolimages/group-plan-masthed.jpg") no-repeat scroll right bottom;
+}
+.groupgratuity-banner {
+    background: #dfded6 url("/public/bolimages/group-plan-masthed.jpg") no-repeat scroll right bottom;
+}
+.uin-gsip {
+    position: absolute;
+    right: 145px;
+    top: 45px;
+}
+.overview h3 {
+    font-size: 12px;
+    font-weight: bold;
+}
+.about-us-ul {
+    margin-top: 0;
+}
+.about-us-ul li {
+    float: none;
+    padding-bottom: 10px;
+}
+.white-container h2 {
+    font-size: 16px;
+}
+.white-container3 h4 {
+    font-size: 13px;
+    padding-top: 10px;
+}
+.scrollbar3 h2 {
+    font-size: 16px;
+    padding-bottom: 5px;
+}
+.white-container-big2 {
+    background: #fff none repeat scroll 0 0;
+    float: left;
+    height: 465px;
+    padding: 20px 0 0;
+    width: 980px;
+}
+.search-rowgriev label {
+    border-right: 3px solid #fff;
+    color: #2b2a26;
+    display: block;
+    float: left;
+    font-size: 12px;
+    font-weight: bold;
+    height: 105px;
+    line-height: 35px;
+    padding-left: 18px;
+    width: 425px;
+}
+.white-container-big-grievance {
+    background: #fff none repeat scroll 0 0;
+    float: left;
+    height: auto;
+    padding: 20px 0 0;
+    width: 980px;
+}
+#content-wrappergriev {
+    background: #b02a30 url("/public/bolimages/body-bg.png") repeat-x scroll left bottom;
+    height: 985px;
+    width: 100%;
+}
+.tooltip-mid-grievmob {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/tooltip-inst-mid.png") repeat-x scroll 0 0;
+    float: left;
+    font-style: italic;
+    height: 30px;
+    padding: 8px 10px 0 5px;
+    width: 450px;
+}
+.tooltip-mid-grievlandline {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/tooltip-inst-mid.png") repeat-x scroll 0 0;
+    float: left;
+    font-style: italic;
+    height: 30px;
+    padding: 8px 10px 0 5px;
+    width: 210px;
+}
+.tooltip-left-griev {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/tooltip-inst-left.png") no-repeat scroll left top;
+    float: left;
+    height: 37px;
+    margin-left: 5px;
+    padding-left: 32px;
+}
+.tooltip-right-griev {
+    float: left;
+    height: 50px;
+    width: 7px;
+}
+.txt-white-middle-small-code {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/txt-white-mid-small.gif") repeat-x scroll 0 0;
+    border: medium none;
+    color: #2b2a26;
+    display: block;
+    float: left;
+    font-family: Arial,Helvetica,sans-serif !important;
+    font-size: 12px;
+    height: 17px;
+    line-height: 17px;
+    padding: 4px 4px 5px;
+    width: 50px;
+}
+.height-40 {
+    height: 40px;
+}
+#mandatory {
+    font-size: 12px;
+    font-weight: bold;
+}
+.margin-right350 {
+    margin-right: 350px;
+}
+.fileUpload {
+    cursor: pointer;
+}
+.search-row .input-field input.fileUpload {
+    border: 1px solid #d0d0d0;
+}
+.noOfBranches {
+    font-size: 12px;
+    font-weight: bold;
+    margin: 20px 0 20px 20px;
+}
+.left-content-white-container {
+    height: 250px;
+    margin: 5px 0 0;
+    padding: 5px 5px 20px 20px;
+    width: 280px;
+}
+.left-content-white-container ul {
+    float: left;
+    height: 200px;
+    width: 100%;
+}
+.left-content-white-container ul li {
+    float: left;
+    margin-top: 8px;
+    padding: 0 5px;
+}
+.nextValue {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/next-icon.gif") no-repeat scroll 0 0;
+    float: right;
+    height: 34px;
+    margin-right: 10px;
+    text-align: center;
+    width: 34px;
+}
+.previousValue {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/prev-icon.gif") no-repeat scroll 0 0;
+    float: left;
+    height: 34px;
+    margin-left: 0;
+    size: 20px;
+    text-align: right;
+    width: 34px;
+}
+.prev {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/prev-icon.gif") no-repeat scroll 0 0;
+    display: block;
+    float: left;
+    height: 34px;
+    margin-left: 12px;
+    width: 34px;
+}
+.hidden {
+    display: none;
+}
+.font-bold {
+    font-weight: bold;
+}
+.branch-locator-font {
+    font-size: 14px;
+    line-height: 14px;
+}
+.network-locator-font {
+    font-size: 11px;
+    line-height: 11px;
+}
+.scrollbar {
+    height: 200px;
+    overflow: auto;
+    width: 100%;
+}
+.calc-links {
+    color: #2b2a26;
+    display: block;
+    font-family: "ZurichBTBoldCondensed",Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    height: 18px !important;
+    padding-top: 125px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.life-cover {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/lifeCover-calculators.png") no-repeat scroll left top;
+}
+.retirement {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/retirement-calculators.png") no-repeat scroll left top;
+}
+.asset-allocation {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/asset-calculators.png") no-repeat scroll left top;
+}
+.education {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/education-calculators.png") no-repeat scroll left top;
+}
+.compounding {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/powerofComp-calculators.png") no-repeat scroll left top;
+}
+.health-cover {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/health-calculators1.png") no-repeat scroll left top;
+}
+.future {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/future-calculators.png") no-repeat scroll left top;
+}
+.calc-header {
+    border-bottom: 1px solid #bebebe;
+    margin-top: 15px;
+    width: 980px;
+}
+h1.calc-heading {
+    color: #2b2a26;
+    float: left;
+    font-family: "ZurichBTBoldCondensed",Arial,Helvetica,sans-serif;
+    font-size: 21px;
+    font-weight: normal;
+    margin-bottom: 11px;
+    padding-bottom: 0;
+    padding-left: 15px;
+    padding-top: 0;
+    text-transform: uppercase;
+    width: 450px;
+}
+.other-calc-link {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/other-calculators-bg.gif") no-repeat scroll right top;
+    color: #201f1f;
+    display: block;
+    float: right;
+    font-family: "ZurichBTCondensed",Arial,Helvetica,sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 13px;
+    padding-right: 35px;
+    text-transform: uppercase;
+}
+.calc-left-content {
+    float: left;
+    margin-bottom: 15px;
+    width: 580px;
+}
+.calc-content {
+    margin-left: 15px;
+    margin-top: 15px;
+}
+.calc-silder {
+    margin-bottom: 15px;
+}
+.age-txt {
+    color: #010101;
+    display: block;
+    font-family: "ZurichBTCondensed",Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+}
+.calc-slid-top {
+    width: 536px;
+}
+.calc-slid-top span {
+    display: block;
+    float: left;
+    font-family: "ZurichBTCondensed",Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+.width-500 {
+    width: 500px !important;
+}
+.width-197 {
+    width: 197px;
+}
+.width-300 {
+    width: 300px;
+}
+.width-auto {
+    width: auto;
+}
+.calc-yr {
+    display: block;
+    float: left;
+    font-family: "ZurichBTBoldCondensed",Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    margin: 3px 0 0 18px;
+    text-transform: uppercase;
+}
+.padding-top25 {
+    padding-top: 25px;
+}
+.calc-right-content {
+    float: left;
+    margin-top: 10px;
+    width: 370px;
+}
+.calc-tabs-bg {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/calc-tabs-bg.gif") no-repeat scroll left top;
+    height: 33px;
+    width: 296px;
+}
+.calc-tab-selected {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/calc-tab-selected.png") no-repeat scroll right bottom;
+    display: block;
+    float: left;
+    padding-bottom: 7px;
+    padding-left: 2px;
+    padding-top: 9px;
+    text-align: center;
+    width: 150px;
+}
+.calc-tab-deselected {
+    color: #5d5b51;
+    display: block;
+    float: left;
+    padding-bottom: 7px;
+    padding-left: 2px;
+    padding-top: 9px;
+    text-align: center;
+    width: 141px;
+}
+.calc-tab-content {
+    margin-top: 35px;
+}
+.increase-tool {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/calc-indr-bg.gif") no-repeat scroll left top;
+    height: 33px;
+    width: 140px;
+}
+.increase-tool-left {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/calc-decrease-button.png") no-repeat scroll left top;
+    float: left;
+    height: 28px;
+    margin-left: 3px;
+    margin-top: 2px;
+    width: 27px;
+}
+.increase-tool-middle {
+    background-color: #000;
+    border: medium none;
+    color: #fff;
+    float: left;
+    font-family: "ZurichBTCondensed",Arial,Helvetica,sans-serif;
+    font-size: 17px;
+    font-weight: normal;
+    margin: 5px 11px 0;
+    width: 20px;
+}
+.increase-tool-right {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/calc-increase-button.png") no-repeat scroll left top;
+    float: left;
+    height: 28px;
+    margin-top: 2px;
+    width: 27px;
+}
+.increase-tool-txt {
+    display: block;
+    margin: 15px 0 0 4px;
+    text-transform: uppercase;
+    width: 30px;
+}
+.width-190 {
+    width: 190px;
+}
+.black-txtbx-left {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/black-txt-left.jpg") no-repeat scroll left top;
+    float: left;
+    height: 33px;
+    padding-left: 13px;
+}
+.black-txtbx-right {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/black-txt-right.jpg") no-repeat scroll right top;
+    color: #fff;
+    float: left;
+    font-family: "ZurichBTCondensed",Arial,Helvetica,sans-serif;
+    font-size: 17px;
+    font-weight: normal;
+    padding: 6px 0 7px 5px;
+    width: 82px;
+}
+.black-txtbx-right:disabled {
+    color: #fff;
+}
+.gray-box-list li {
+    color: #010101;
+    float: left;
+    font-family: "ZurichBTCondensed",Arial,Helvetica,sans-serif;
+    padding: 5px 20px 0 15px;
+    text-transform: uppercase;
+}
+.cumilative-exp-txt {
+    border-right: 1px solid #b8b8b8;
+    font-size: 14.5px;
+    font-weight: normal;
+    width: 240px;
+}
+.calc-gray-box {
+    background-color: #ececec;
+    padding: 30px 0 30px 5px;
+}
+.rs-cr-txt .normal-txt {
+    font-size: 20px;
+}
+.rs-cr-txt .normal-txt-2 {
+    font-size: 22px;
+}
+.calc-gray-box .rs-cr-txt .big-txt {
+    font-size: 25px;
+    line-height: normal;
+}
+.color-white {
+    color: #fff;
+}
+.calc-maroon-box {
+    background: #460a0c url("/public/bolimages/calc-maroon-box-bg.gif") repeat-x scroll left top;
+    padding: 5px 0 0 10px;
+}
+.calc-maroon-list li {
+    color: #fff;
+    float: left;
+    font-family: "ZurichBTCondensed",Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    padding-bottom: 5px !important;
+    padding-left: 17px;
+    padding-right: 20px;
+    padding-top: 22px;
+    text-transform: uppercase;
+}
+.my-ideal {
+    border-right: 1px solid #805551;
+}
+.calc-maroon-list {
+    float: left;
+}
+.text-align-center {
+    text-align: center;
+}
+.text-upper {
+    text-transform: uppercase;
+}
+.calc-bottom {
+    font-family: "ZurichBTCondensed",Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    padding: 10px 15px 10px 0;
+    text-align: right;
+    text-transform: uppercase;
+}
+.padding-bottom0 {
+    padding-bottom: 0;
+}
+.calc-maroon-list .rs-cr-txt {
+    padding-bottom: 14px;
+    padding-top: 18px;
+}
+.calc-maroon-list .big-txt {
+    font-size: 28px;
+    line-height: 0;
+}
+.asset-held .ui-jqgrid tr.jqgrow td {
+    font-weight: bold;
+    padding-left: 17px;
+}
+.asset-held-by .ui-jqgrid tr.jqgrow td {
+    font-weight: bold;
+    padding-left: 17px;
+}
+.width-277 {
+    width: 277px;
+}
+.width-230 {
+    width: 230px;
+}
+.width-265 {
+    width: 265px;
+}
+.width-242 {
+    width: 242px;
+}
+.width-250 {
+    width: 250px;
+}
+.width-252 {
+    width: 252px;
+}
+.margin-top45 {
+    margin-top: 45px;
+}
+.margin-bottom25 {
+    margin-bottom: 25px;
+}
+.width-130 {
+    width: 130px;
+}
+.width-160 {
+    width: 160px;
+}
+.width-230 {
+    width: 230px;
+}
+.width-267 {
+    width: 267px;
+}
+.width-295 {
+    width: 295px;
+}
+.width-178 {
+    width: 178px;
+}
+.calc-maroon-list li.regular-invest {
+    border-right: 1px solid #805551;
+    font-size: 15px;
+    font-weight: bold;
+    width: 245px;
+}
+.width-120 {
+    width: 120px !important;
+}
+.carousel {
+    display: block;
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+.carousel ul {
+    height: 230px !important;
+}
+.carousel li {
+    display: block;
+    float: left;
+    height: 230px;
+    margin: 0;
+    padding: 0;
+    width: 350px;
+}
+.carousel li.empty {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: medium none;
+}
+a.disabled {
+    cursor: default;
+    visibility: hidden;
+}
+.calc-clearfix {
+    clear: both;
+    float: none;
+    height: 25px;
+    padding-left: 105px;
+}
+#foo1-prev img, #foo1-next img {
+    display: block;
+    float: left;
+    margin: 0 10px;
+}
+.calc-steps {
+    color: #2b2a26;
+    font-family: "ZurichBTCondensed",Arial,Helvetica,sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+}
+.calc-ques {
+    color: #2b2a26;
+    font-family: "ZurichBTBoldCondensed",Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+.calc-steps-options, .calc-steps-options-selected {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/calc-steps-sprite.gif") no-repeat scroll left top;
+    color: #5d5b51;
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    height: 24px;
+    padding: 10px 0 0 10px;
+    width: 310px;
+}
+.calc-steps-options-selected {
+    background-position: left -35px;
+    color: #fff;
+}
+.progress-bar-list li {
+    font-weight: bold;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+.progress-bar-list li span {
+    padding: 3px;
+}
+.progress-bar-content {
+    width: 528px;
+}
+.dependants {
+    float: left;
+    width: 340px;
+}
+.profession {
+    float: left;
+    width: 180px;
+}
+.dependants li, .profession li {
+    float: left;
+    margin-right: 2px;
+}
+.dependants1, .dependants2, .dependants3, .dependants4, .dependants5, .dependants1-active, .dependants2-active, .dependants3-active, .dependants4-active, .dependants5-active {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/dependents-sprite.gif") no-repeat scroll left top;
+    display: block;
+    float: left;
+    height: 49px;
+    width: 54px;
+}
+.profession1, .profession2, .profession3, .profession1-active, .profession2-active, .profession3-active {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/profession-sprite.gif") no-repeat scroll left top;
+    display: block;
+    float: left;
+    height: 49px;
+    width: 54px;
+}
+.dependants2, .profession2 {
+    background-position: -55px top;
+}
+.dependants3, .profession3 {
+    background-position: -110px top;
+}
+.dependants4 {
+    background-position: -165px top;
+}
+.dependants5 {
+    background-position: -220px top;
+}
+.dependants1-active, .profession1-active {
+    background-position: left -50px;
+}
+.dependants2-active, .profession2-active {
+    background-position: -55px -50px;
+}
+.dependants3-active, .profession3-active {
+    background-position: -110px -50px;
+}
+.dependants4-active {
+    background-position: -165px -50px;
+}
+.dependants5-active {
+    background-position: -220px -50px;
+}
+.color-black {
+    color: #000;
+}
+.foreclosure-wrapper {
+    padding: 20px 15px 20px 20px;
+}
+.foreclosure-wrapper a {
+    color: #3b5ba2;
+}
+.margin-left200 {
+    margin-left: 200px;
+}
+.notes {
+    padding-left: 20px;
+}
+.notes li {
+    list-style: outside none decimal;
+}
+.reciept-btn-wrapper {
+    float: left;
+    overflow: hidden;
+    padding-left: 205px;
+}
+.height-190 {
+    height: 190px !important;
+}
+.benefit-bottom {
+    overflow: hidden;
+    padding: 30px 47px 0 28px;
+}
+.benefit-bottom p {
+    padding-top: 70px;
+}
+.benefit-bottom a {
+    color: #004a80;
+    font-weight: bold;
+}
+.square-tile-opacity {
+    opacity: 0.3;
+}
+.padding-top160 {
+    padding-top: 160px;
+}
+.radio-grey:focus, .radio:focus, .checkbox-grey:focus, .selectBox-dropdown:focus, .radio-green:focus, .checkbox:focus, .checkbox-grad:focus {
+    outline: 1px dotted #000;
+}
+.login-ctnt-wrapper .radio {
+    float: left;
+    padding-top: 0;
+}
+.calc-steps-options-two-line {
+    height: 32px;
+    padding-top: 2px;
+}
+.retiretime-exp-txt {
+    border-right: 1px solid #b8b8b8;
+    font-size: 14.5px;
+    font-weight: normal;
+    width: 190px;
+}
+.retire-sav-txt {
+    border-right: 1px solid #b8b8b8;
+    font-size: 14.5px;
+    font-weight: normal;
+    width: 170px;
+}
+.calc-div {
+    background: #b02a30 none repeat scroll 0 0;
+    border: 1px solid #dfaaac;
+    padding: 33px 13px 20px 22px;
+}
+.calc-ctnt {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/calc-icon-white.gif") no-repeat scroll 0 0;
+    color: #fff;
+    height: 88px;
+    padding-left: 43px;
+}
+.calc-head {
+    color: #fff !important;
+    font-size: 18px !important;
+}
+#popupPage {
+    background: #ffffff none repeat scroll 0 0;
+    display: none;
+    height: 500px;
+    left: 50%;
+    margin-left: -300px;
+    position: absolute;
+    top: 150px;
+    width: 500px;
+    z-index: 1002;
+}
+input.modal-ok-button {
+    background: rgba(0, 0, 0, 0) url("../bolimages/dialog-button-modal-ok.gif") no-repeat scroll left top;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    height: 27px;
+    margin: 0 0 10px;
+    padding-bottom: 5px;
+    width: 55px;
+}
+.label-width {
+    width: 100px !important;
+}
+.txt-white-middle-small-claim-pop {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/txt-white-mid-small.gif") repeat-x scroll 0 0;
+    border: medium none;
+    color: #2b2a26;
+    display: block;
+    float: left;
+    font-family: Arial,Helvetica,sans-serif !important;
+    font-size: 12px;
+    height: 17px;
+    line-height: 17px;
+    padding: 4px 4px 5px;
+    width: 140px;
+}
+.margin-left210 {
+    margin-left: 210px !important;
+}
+.calc-popup-close-btn {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/popup-close.png") no-repeat scroll 0 0;
+    display: block;
+    font-family: "ZurichBTBoldCondensed",Arial,Helvetica,sans-serif;
+    font-size: 13px;
+    height: 21px;
+    left: 430px;
+    padding-top: 5px;
+    position: absolute;
+    text-transform: uppercase;
+    top: -26px;
+    width: 71px;
+}
+.calc-disclaimer-maroon-box {
+    background: #460a0c url("/public/bolimages/calc-maroon-box-bg.gif") repeat-x scroll left top;
+    padding: 5px 0 0 10px;
+}
+.black-loan-txtbx-right {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/black-txt-right.jpg") no-repeat scroll right top;
+    color: #fff;
+    float: left;
+    font-family: "ZurichBTCondensed",Arial,Helvetica,sans-serif;
+    font-size: 17px;
+    font-weight: normal;
+    padding: 6px 0 7px 5px;
+    width: 100px;
+}
+.coe-calc-gray-box {
+    background-color: #ececec;
+    padding: 10px 0 10px 5px;
+}
+.coe-calc-gray-box .rs-cr-txt .big-txt {
+    font-size: 25px;
+    line-height: normal;
+}
+.coe-cumilative-exp-txt {
+    border-right: 1px solid #b8b8b8;
+    font-size: 14px;
+    font-weight: bold;
+    width: 500px;
+}
+.maintenance-mid {
+    background: #761518 url("/public/bolimages/border-maintenance-bg.gif") repeat-x scroll left top;
+    float: left;
+    padding: 15px 11px 17px 10px;
+}
+.maintenance-mid-content {
+    background: #fff url("/public/bolimages/oops.jpg") no-repeat scroll right 100px;
+    float: left;
+    padding: 27px 0 50px 29px;
+    width: 885px;
+}
+.maintenance-mid-content2 {
+    background: #fff url("/public/bolimages/maintenance.gif") no-repeat scroll 580px 135px;
+    float: left;
+    padding: 27px 0 50px 29px;
+    width: 885px;
+}
+.maintenance-heading {
+    color: #004079;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 21px;
+    font-weight: normal;
+}
+.maintenance-mid-wrapper {
+    padding: 21px 25px 16px 23px;
+}
+ul.list-options {
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+.listing {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/maintenance-list-type.gif") no-repeat scroll left 28px;
+    color: #333333;
+    font-size: 21px;
+    padding-left: 21px;
+    padding-top: 23px;
+}
+.text-underline {
+    text-decoration: underline;
+}
+.color-blue {
+    color: #004079;
+}
+.color-mahroon {
+    color: #ab282e;
+}
+.details-forms {
+    border: 1px solid #d8d8d8;
+    float: left;
+    padding: 1px;
+    width: 465px;
+}
+.details-forms h2 {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/form-bg.gif") repeat-x scroll 0 0;
+    color: #ac292e;
+    font-size: 14px;
+    font-weight: bold;
+    height: 13px;
+    padding: 10px;
+}
+.details-forms .details-row {
+    background: #eae9e9 none repeat scroll 0 0;
+    border-top: 1px solid #fff;
+    height: 28px;
+}
+.alt {
+    background: #f3f3f3 none repeat scroll 0 0;
+}
+.details-forms .details-row label {
+    border-right: 3px solid #fff;
+    color: #2b2a26;
+    display: block;
+    float: left;
+    font-size: 12px;
+    font-weight: bold;
+    height: 28px;
+    line-height: 28px;
+    padding-left: 10px;
+    width: 78px;
+}
+.details-row .txt-white-middle-small {
+    width: 200px;
+}
+.details-row .input-field {
+    float: left;
+    padding: 2px 0 0 10px;
+}
+.details-forms .submit {
+    float: left;
+    padding: 10px 0 10px 167px;
+}
+.e-stmt-wrapper {
+    background: #fff none repeat scroll 0 0;
+    float: left;
+    height: 270px;
+    padding: 20px 17px 30px 28px;
+    width: 605px;
+}
+.e-stmt-nli {
+    margin-top: 25px;
+}
+.e-note {
+    font-size: 11px;
+    margin-top: 10px;
+}
+.e-note span {
+    font-size: 11px;
+}
+.e-note a {
+    color: #ae292f;
+}
+.but-center {
+    margin: 0 auto 12px;
+    width: 232px;
+}
+.width-232 {
+    width: 232px;
+}
+.padding-top0 {
+    padding-top: 0 !important;
+}
+.pre-right-section-new {
+    border-bottom: 1px solid #d3d3d3;
+    padding-bottom: 12px;
+}
+.txt-white-middle-small-payonline {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/txt-white-mid-small.gif") repeat-x scroll 0 0;
+    border: medium none;
+    color: #2b2a26;
+    display: block;
+    float: left;
+    font-family: Arial,Helvetica,sans-serif !important;
+    font-size: 12px;
+    height: 17px;
+    line-height: 17px;
+    padding: 4px 4px 5px;
+    width: 150px;
+}
+.txt-middle-payonline {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/dd-mid.gif") repeat-x scroll 0 0;
+    border: medium none;
+    color: #333;
+    display: block;
+    float: left;
+    font-family: Arial,Helvetica,sans-serif !important;
+    font-size: 11px;
+    height: 17px;
+    line-height: 17px;
+    margin-left: 0;
+    padding: 4px 1px 4px 12px;
+    width: 150px;
+}
+.datepicker-txt-left-payonline {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/smartkid/dd-left.gif") no-repeat scroll 0 0;
+    float: left;
+    height: 25px;
+    margin-left: 8px;
+    margin-right: 2px;
+    padding-left: 3px;
+    position: relative;
+}
+.dashboard-wrapper-payonline {
+    background: white none repeat scroll 0 0;
+    height: auto;
+    padding: 13px 0 13px 18px;
+    width: 940px;
+}
+#content-wrapper-payonline {
+    background: #b02a30 url("/public/bolimages/body-bg.png") repeat-x scroll left bottom;
+    height: auto;
+    width: 100%;
+}
+.shadow-payonline {
+}
+.padding-bottom84 {
+    padding-bottom: 84px;
+}
+.height60 {
+    height: 60px;
+}
+.search-row-payonline {
+    background: #eae9e9 none repeat scroll 0 0;
+    height: 35px;
+    width: 480px;
+}
+.payment-confirm {
+    border-collapse: collapse;
+    width: 860px;
+}
+.payment-confirm tr {
+    background-color: #ecebeb;
+}
+.payment-confirm td, .payment-confirm th {
+    border: 1px solid #fff;
+    height: 35px;
+    padding-left: 8px;
+    text-align: left;
+}
+.payment-confirm tr.alt {
+    background-color: #dddcdc;
+}
+.bottom-text {
+    margin-top: 100px;
+}
+.height50 {
+    height: 50px;
+}
+.height40 {
+    height: 40px;
+}
+.pre-payment {
+    display: inline-block;
+    font-size: 14px;
+    margin-bottom: 13px;
+}
+.unsuccessful {
+    background: #fd363f none repeat scroll 0 0;
+    color: #fff;
+}
+.margin-bottom17 {
+    margin-bottom: 17px;
+}
+.padding-top2 {
+    padding-top: 2px;
+}
+.width39 {
+    width: 39px;
+}
+span.code {
+    float: left;
+    font-size: 11px;
+}
+.chk_txt_payment {
+    display: inline-block;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 12px;
+    padding-top: 15px;
+}
+.works {
+    margin-top: 13px;
+}
+.work-info1 {
+    border-right: 1px solid #9c9c9c;
+    color: #b3373d;
+    float: left;
+    font-weight: bold;
+    width: 80px;
+}
+.work-info2 {
+    color: #b3373d;
+    font-weight: bold;
+    margin-left: 9px;
+}
+.terms {
+    margin-left: -11px;
+    margin-top: 17px;
+    width: 691px;
+}
+.red-btn-right-big-payment {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/small-right-bg.gif") no-repeat scroll right 0;
+    float: left;
+    height: 20px;
+    margin-left: 8px;
+}
+.red-btn-left-big-payment {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/small-left-bg.gif") no-repeat scroll 0 0;
+    border: medium none;
+    color: #fff;
+    cursor: pointer;
+    font-family: "ZurichBTBoldCondensed",Arial,Helvetica,sans-serif;
+    font-size: 13px;
+    line-height: 13px;
+    overflow: visible;
+    padding: 2px 16px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 112px;
+}
+.padding-bottom84 {
+    padding-bottom: 84px;
+}
+.bottom-link-payonline {
+    padding-bottom: 65px;
+}
+.banking li a.wht-is-this {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/info-icon.gif") no-repeat scroll right top;
+    padding-left: 0;
+    padding-right: 40px;
+    text-transform: uppercase;
+    width: 80px;
+}
+.width-600 {
+    width: 600px !important;
+}
+.f {
+    width: 580px !important;
+}
+.calc-left-container {
+    float: left;
+    width: 205px;
+}
+.calc-mid-container {
+    float: left;
+    margin: 0 3px;
+    width: 399px;
+}
+.calc-right-container {
+    float: left;
+    margin-right: 10px;
+    width: 205px;
+}
+.calc-right-container2 {
+    float: left;
+    width: 155px;
+}
+.calc-white-container {
+    background: #fff none repeat scroll 0 0;
+    height: 471px;
+    padding: 7px;
+}
+.calc-blue-container {
+    background: #3b5ba2 none repeat scroll 0 0;
+    height: 458px;
+    padding: 7px 6px 20px;
+}
+.calc-heading {
+    float: left;
+    font-family: "ZurichBTBoldCondensed",Arial,Helvetica,sans-serif;
+    font-weight: normal;
+    padding: 13px 16px 16px;
+    text-transform: uppercase;
+}
+.calc-heading span {
+    float: left;
+    font-size: 48px;
+    line-height: 34px;
+    width: 50px;
+}
+.calc-heading span.ctnt {
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 18px;
+    padding-left: 4px;
+    width: auto;
+}
+.calc-heading1 {
+    background: #f07b1f none repeat scroll 0 0;
+    color: #f4a160;
+    width: 159px;
+}
+.calc-heading2 {
+    background: #d5551b none repeat scroll 0 0;
+    color: #e1865d;
+    width: 353px;
+}
+.calc-heading3 {
+    background: #be3518 none repeat scroll 0 0;
+    color: #d1705b;
+    width: 159px;
+}
+.calc-heading4 {
+    color: #748bbd;
+    padding-left: 5px;
+    width: 121px;
+}
+.vertical-slider-container {
+    margin: 50px 0 0 16px;
+}
+.future-dream-list {
+    padding: 0 0 0 25px;
+}
+.future-dream-list li {
+    border: 1px solid #c8c8c8;
+    float: left;
+    margin: 29px 4px 0;
+}
+.future-dream-list li a {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/future-dream-icons.gif") no-repeat scroll 0 0;
+    color: #202020;
+    display: block;
+    font-family: "ZurichBTBoldCondensed",Arial,Helvetica,sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    height: 37px;
+    padding-top: 100px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    width: 102px;
+}
+.future-dream-list li a.green-check span.tick1 {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/green-checkbox.gif") no-repeat scroll 0 0;
+    height: 26px;
+    left: 6px;
+    position: absolute;
+    top: 4px;
+    width: 26px;
+}
+.future-dream-list li a.green-check-ticked span.tick1 {
+    background-position: 0 -26px;
+}
+.future-dream-list li a.long-wealth {
+    background-position: 0 29px;
+}
+.future-dream-list li a.monthly-income {
+    background-position: -102px 29px;
+}
+.future-dream-list li a.child-education {
+    background-position: -204px 29px;
+}
+.future-dream-list li a.retirement-plan {
+    background-position: -306px 29px;
+}
+.future-dream-list li a.life-protection {
+    background-position: -408px 29px;
+}
+.future-dream-list li a.provide-health-cover {
+    background-position: -510px 29px;
+}
+.preference-select {
+    color: #9dadd1;
+    font-family: "ZurichBTBoldCondensed",Arial,Helvetica,sans-serif;
+    font-size: 21px;
+    padding-top: 130px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.suggestion-list {
+    height: 333px !important;
+}
+.suggestion-list li {
+    background: #fff none repeat scroll 0 0;
+    color: #004a80;
+    font-family: "ZurichBTBoldItalic",Arial,Helvetica,sans-serif;
+    font-size: 18px;
+    height: 80px;
+    margin-top: 7px;
+    padding: 0 0 20px;
+    width: 142px;
+}
+.suggestion-list li span, .oasispru span {
+    color: #f58220;
+}
+.oasispru {
+    color: #004a80;
+    font-family: "ZurichBTBoldItalic",Arial,Helvetica,sans-serif;
+    font-size: 13px;
+}
+.recommend2 {
+    color: #fff;
+    font-family: "ZurichBTCondensed",Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    padding: 20px 0 0 8px;
+    text-transform: uppercase;
+}
+.recommend2 span {
+    font-family: "ZurichBTBoldCondensed",Arial,Helvetica,sans-serif;
+    font-size: 18px;
+}
+.we-suggest .anythingWindow, .we-suggest .anythingSlider {
+    height: 333px !important;
+}
+.we-suggest .anythingSlider .forward {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/white-arrow.gif") no-repeat scroll 0 0;
+    bottom: -48px;
+    display: block !important;
+    height: 18px;
+    right: 15px;
+    width: 17px;
+}
+.we-suggest .anythingSlider .anythingControls {
+    display: none !important;
+}
+.we-suggest .anythingSlider .arrow a {
+    height: 18px;
+    margin: 0;
+    width: 17px;
+}
+.Tax-calc3 li {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/black-square.gif") no-repeat scroll 0 13px;
+    padding: 10px 0 0 20px;
+}
+.secure-header {
+    color: #0b273c;
+    float: right;
+    font-family: "ZurichBTCondensed",Arial,Helvetica,sans-serif;
+    font-size: 16px;
+    padding-right: 40px;
+    padding-top: 35px;
+    text-transform: uppercase;
+}
+.secure-header a {
+    font-size: 12px;
+}
+.last-visit {
+    font-size: 12px;
+}
+.bold {
+    font-weight: bold;
+}
+.log-out {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/log-out-bg.jpg") no-repeat scroll left top;
+    display: inline-block;
+    font-weight: bold;
+    height: 20px;
+    margin-left: 10px;
+    padding: 3px 10px;
+    width: 51px;
+}
+.app-progress {
+    float: right;
+    margin-top: 5px;
+    padding-right: 35px;
+}
+.app-progress-all {
+    background-color: #ddd;
+    display: inline-block;
+    font-size: 0;
+    height: 16px;
+    line-height: 0;
+    margin-right: 10px;
+    width: 170px;
+}
+.app-progress span {
+    font-family: "ZurichBTCondensed",Arial,Helvetica,sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.app-progress .progress {
+    background-color: #f90;
+    display: inline-block;
+    font-size: 0;
+    height: 16px;
+    line-height: 0;
+}
+.strength {
+    background-color: #fff;
+}
+.text-align-right {
+    text-align: right;
+}
+.strength-default {
+    background-color: #e9ebe6;
+    display: inline-block;
+    font-size: 0;
+    height: 9px;
+    line-height: 0;
+    margin-right: 10px;
+    margin-top: 10px;
+    width: 228px;
+}
+.very-poor {
+    background-color: #ff0000;
+    display: inline-block;
+    font-size: 0;
+    height: 9px;
+    line-height: 0;
+    width: 57px;
+}
+.poor {
+    background-color: #ff0000;
+    display: inline-block;
+    font-size: 0;
+    height: 9px;
+    line-height: 0;
+    width: 114px;
+}
+.strong {
+    background-color: #ff9900;
+    display: inline-block;
+    font-size: 0;
+    height: 9px;
+    line-height: 0;
+    width: 171px;
+}
+.very-strong {
+    background-color: #030;
+    display: inline-block;
+    font-size: 0;
+    height: 9px;
+    line-height: 0;
+    width: 228px;
+}
+.same-as-checkbox {
+    float: left;
+    margin-left: 20px;
+    margin-top: 25px;
+    width: 30px;
+}
+.same-as-txt {
+    display: inline-block;
+    float: left;
+    margin-top: 25px;
+}
+.chk_txt {
+    display: inline-block;
+    font-size: 11px;
+    padding-left: 10px;
+}
+.banking li a.wht-is-this {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/info-icon.gif") no-repeat scroll right top;
+    padding-left: 0;
+    padding-right: 40px;
+    text-transform: uppercase;
+    width: 80px;
+}
+.pre-left {
+    float: left;
+    margin-top: 20px;
+    width: 700px;
+}
+.pre-from- {
+    border-bottom: 1px solid #e7e7e7;
+    padding-bottom: 30px;
+}
+.pre-from-sec {
+    margin-left: 12px;
+    margin-right: 17px;
+    margin-top: 20px;
+}
+.search-row .two-line-label {
+    line-height: normal !important;
+    padding-right: 10px;
+    padding-top: 2px;
+    width: 172px;
+}
+.pre-right {
+    background-color: #e8e8e8;
+    float: left;
+    height: 425px;
+    padding: 20px 15px;
+    width: 210px;
+}
+.related-info {
+    font-family: "ZurichBTBoldCondensed",Arial,Helvetica,sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    padding-bottom: 7px;
+    text-transform: uppercase;
+}
+.pre-ques {
+    display: inline-block;
+    margin-bottom: 13px;
+}
+.pre-right-section {
+    border-bottom: 1px solid #d3d3d3;
+    padding-bottom: 17px;
+    padding-top: 21px;
+}
+.error-textbox-left {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/error-textbox-left.gif") no-repeat scroll 0 0;
+    float: left;
+    height: 27px;
+    padding-left: 5px;
+}
+.error-textbox-middle {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/error-textbox-middle.gif") repeat-x scroll 0 0;
+    border: medium none;
+    color: #2b2a26;
+    display: block;
+    float: left;
+    font-family: Arial,Helvetica,sans-serif !important;
+    font-size: 12px;
+    height: 19px;
+    line-height: 17px;
+    padding: 4px 4px 5px;
+    width: 221px;
+}
+.error-textbox-right {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/error-textbox-right.gif") no-repeat scroll 0 0;
+    float: left;
+    height: 27px;
+    width: 5px;
+}
+.error-txt {
+    color: #af292f;
+    float: left;
+    font-style: italic;
+    margin-left: 10px;
+    padding-top: 10px;
+}
+.error-txt img {
+    margin-right: 5px;
+    vertical-align: bottom;
+}
+.float-none {
+    float: none;
+}
+.pre-cer-popup {
+    background: #fff none repeat scroll 0 0;
+    display: none;
+    height: 250px;
+    left: 400px;
+    padding: 25px 5px 10px 25px;
+    position: absolute;
+    top: 180px;
+    width: 652px;
+    z-index: 1002;
+}
+.pre-cer-popup .closeX {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/popup-close.png") no-repeat scroll 0 0;
+    font-family: "ZurichBTBoldCondensed",Arial,Helvetica,sans-serif;
+    font-size: 13px;
+    height: 21px;
+    padding-left: 12px;
+    padding-top: 5px;
+    position: absolute;
+    right: -6px;
+    top: -26px;
+    width: 71px;
+}
+.pop-span {
+    display: block;
+    padding: 15px 0 25px;
+}
+.arrow-red-link {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/red-arrow-right.gif") no-repeat scroll left top;
+    color: #af292f;
+    display: inline-block;
+    font-weight: bold;
+    margin-top: 12px;
+    padding-bottom: 2px;
+    padding-left: 21px;
+}
+.have-a-prbm-popup {
+    background: #fff none repeat scroll 0 0;
+    display: none;
+    height: 250px;
+    left: 400px;
+    padding: 25px 5px 10px 25px;
+    position: absolute;
+    top: 180px;
+    width: 652px;
+    z-index: 1002;
+}
+.have-a-prbm-popup .closeX1 {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/popup-close.png") no-repeat scroll 0 0;
+    font-family: "ZurichBTBoldCondensed",Arial,Helvetica,sans-serif;
+    font-size: 13px;
+    height: 21px;
+    padding-left: 12px;
+    padding-top: 5px;
+    position: absolute;
+    right: -6px;
+    top: -26px;
+    width: 71px;
+}
+.white-container-big1 {
+    background: #fff none repeat scroll 0 0;
+    float: left;
+    height: 465px;
+    padding: 20px 0 0;
+    width: 980px;
+}
+.pre-from-cnt-epin {
+    padding-bottom: 30px;
+}
+.border-rght-none {
+    border-right: medium none !important;
+}
+.register {
+    color: #4e4e4e;
+    font-size: 11px;
+    font-weight: bold;
+}
+.register-email {
+    color: #4e4e4e;
+    font-size: 11px;
+}
+.pay-premium {
+    color: #4e4e4e;
+    font-size: 11px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.border-btm-none {
+    border-bottom: medium none;
+}
+.pay-prm {
+    color: #f00;
+}
+.search-row-epin {
+    background: #eae9e9 none repeat scroll 0 0;
+    height: 258px;
+    margin-left: 44px;
+    width: 662px;
+}
+.customer {
+    color: #2b2a26;
+    float: left;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 21px;
+    padding-left: 20px;
+}
+.information {
+    float: left;
+    width: 662px;
+}
+.user-id {
+    float: left;
+    font-size: 13px;
+    font-weight: bold;
+    margin-left: 21px;
+    margin-right: 119px;
+    margin-top: 24px;
+}
+.margin-top24 {
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 24px;
+}
+.width400 {
+    width: 400px;
+}
+.sec-ques {
+    float: left;
+    font-size: 13px;
+    font-weight: bold;
+    margin-left: 21px;
+    margin-right: 63px;
+    margin-top: 24px;
+}
+.sec-ans {
+    float: left;
+    font-size: 13px;
+    font-weight: bold;
+    margin-left: 21px;
+    margin-right: 72px;
+    margin-top: 24px;
+}
+.parameters {
+    float: left;
+    width: 300px;
+}
+.information-error {
+    float: left;
+    margin-left: 19px;
+    width: 662px;
+}
+.margin-top8 {
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 8px;
+}
+.height188 {
+    height: 188px !important;
+}
+.height100 {
+    height: 100px;
+}
+.search-row-epin-verif {
+    background: #eae9e9 none repeat scroll 0 0;
+    height: 100px;
+    margin-left: 30px;
+    width: 677px;
+}
+.width-535 {
+    width: 535px;
+}
+.customer1 {
+    color: #2b2a26;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 21px;
+    padding-left: 20px;
+    padding-top: 16px;
+}
+.terms {
+    float: left;
+    width: 375px;
+}
+.height51 {
+    height: 51px !important;
+}
+.under-text {
+    display: block;
+    font-size: 11px;
+    padding-left: 10px;
+    width: 250px;
+}
+.user_txt {
+    color: #ff0000;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+.width-135 {
+    width: 135px;
+}
+.padding-left45 {
+    padding-left: 45px;
+}
+.customer-ques {
+    clear: both;
+    color: #2b2a26;
+    font-size: 13px;
+    font-weight: bold;
+    padding-left: 20px;
+    padding-top: 21px;
+}
+.options {
+    float: left;
+    margin: 0;
+    padding: 20px 0 0 20px;
+}
+.options li {
+    float: left;
+    margin: 0;
+    padding: 5px 0;
+    width: 600px;
+}
+.margin5 {
+    margin: 5px 0;
+}
+.ewidth-200 {
+    width: 200px;
+}
+.id-choice {
+    margin-top: -5px;
+}
+.padding-top-5 {
+    padding-top: 5px;
+}
+.what_popup {
+}
+.white-container-sma {
+    background: white none repeat scroll 0 0;
+    float: left;
+    height: 495px;
+    padding: 20px 0 0;
+    width: 815px;
+}
+.height-70 {
+    height: 70px;
+}
+.amt-txt-left {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/smartkid/txt-left.gif") no-repeat scroll 0 0;
+    float: left;
+    height: 25px;
+    padding-left: 22px;
+}
+.datepicker-txt-left {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/smartkid/dd-left.gif") no-repeat scroll 0 0;
+    float: left;
+    height: 25px;
+    margin-left: 12px;
+    padding-left: 3px;
+    position: relative;
+}
+.txt-middle {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/smartkid/dd-mid.gif") repeat-x scroll 0 0;
+    border: medium none;
+    color: #333;
+    display: block;
+    float: left;
+    font-family: Arial,Helvetica,sans-serif !important;
+    font-size: 11px;
+    height: 17px;
+    line-height: 17px;
+    margin-left: 0;
+    padding: 4px 1px 4px 12px;
+    width: 150px;
+}
+.amt-txt-left .txt-middle {
+    font-size: 18px;
+}
+.txt-right {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/smartkid/txt-right.gif") no-repeat scroll 0 0;
+    float: left;
+    height: 25px;
+    width: 3px;
+}
+.ui-datepicker {
+    width: 192px;
+}
+.ui-datepicker-calendar .ui-state-default {
+    border: 1px solid #d8dcdf;
+   /* color: #004276;*/
+    display: block;
+    font-weight: bold;
+}
+.ui-datepicker-calendar .ui-state-active, .ui-datepicker-calendar .ui-widget-content .ui-state-active, .ui-datepicker-calendar .ui-widget-header .ui-state-active {
+    background: #ffffff url("/public/bolimages/smartkid/ui-bg_flat_65_ffffff_40x100.png") repeat-x scroll 50% 50%;
+    border: 1px solid #eeeeee;
+    color: #cc0000;
+    font-weight: bold;
+}
+.ui-datepicker-calendar .ui-state-hover a, .ui-datepicker-calendar .ui-state-hover a:hover {
+    color: #111111;
+    text-decoration: none;
+}
+.ui-datepicker-trigger {
+    float: right;
+    margin-left: 8px;
+    right: 10px;
+    top: 4px;
+}
+.long-text {
+    height: 25px !important;
+    padding-top: 121px !important;
+}
+.square-tile1 {
+    border-bottom: 3px solid #fff !important;
+}
+#right_nav_top {
+    background: #d1cebb url("/public/bolimages/right_leftborder_bg.gif") repeat-y scroll 0 0;
+    color: #7f7f7f;
+    padding: 0 10px;
+    text-decoration: none;
+}
+#right_nav_top td {
+    border-bottom: 2px solid #ffffff;
+    padding: 4px 15px;
+}
+#right_nav_top a {
+    color: #7f7f7f;
+    text-decoration: none;
+}
+#right_nav_top_bottomborder {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/right_bottomborder_bg.gif") repeat-x scroll 0 0;
+    line-height: 9px;
+}
+#right_nav_inner {
+}
+#right_nav_inner td {
+    border-bottom: medium none;
+    padding: 0;
+}
+.select {
+    color: #98291e;
+    font-weight: bold;
+}
+.font20 {
+    font-size: 20px;
+    line-height: 25px;
+}
+.font18 {
+    font-size: 18px;
+    line-height: 25px;
+}
+td.claim-settlement {
+    padding-bottom: 4px;
+    padding-top: 4px;
+}
+.font {
+    color: #98291e;
+    font-weight: bold;
+}
+.maroon {
+    color: #98291e;
+}
+.font15 {
+    font-size: 14px;
+    line-height: 16px;
+}
+.claim-process a {
+    color: #98291e;
+    text-decoration: underline;
+}
+.claims-honoured {
+    float: left;
+    height: 145px;
+    padding: 10px 10px 0 5px;
+}
+.claim-care {
+    height: 310px;
+    padding: 10px 5px 0;
+}
+.accord_head {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/accordion_head_bg.gif") no-repeat scroll 0 0 !important;
+    padding: 10px 0 11px 24px;
+    position: relative;
+}
+.accord_content {
+    border: 1px solid #d6d6d6;
+}
+.accord_content ul {
+    margin-top: 20px;
+}
+.accord_content li {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/document_ico.gif") no-repeat scroll 0 0;
+    float: left;
+    height: 32px;
+    margin-left: 20px;
+    padding: 0 0 20px 35px;
+    width: 235px;
+}
+.accord_content td {
+    padding: 5px;
+}
+.show_hide_head, .accord_head, .inner_head, #share_your_experience, #share_your_experience_close {
+    cursor: pointer;
+}
+.background_roller {
+    background-image: url("/public/bolimages/background_roller.jpg");
+    background-repeat: no-repeat;
+    height: 38px;
+}
+.show_hide_content td {
+    padding: 5px;
+}
+.pad_none td {
+    padding: 0;
+}
+#claim .review-accordion-content {
+    background: #fff none repeat scroll 0 0;
+}
+#claim .review-accordion-content ul {
+    margin-top: 20px;
+}
+#claim .review-accordion-content li {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/document_ico.gif") no-repeat scroll 0 0;
+    display: inline-table;
+    font-size: 12px;
+    height: 32px;
+    margin-left: 20px;
+    padding: 0 0 15px 35px;
+    width: 230px;
+}
+#claim .display-inline-block {
+    color: #98291e;
+    display: inline-block;
+}
+#claim .step {
+    float: left;
+    margin-left: 28px;
+    width: 145px;
+}
+#claim .step p {
+    float: left;
+    line-height: normal;
+    width: 145px;
+}
+#claim .step span {
+    border-bottom: 1px solid #898989;
+    border-top: 1px solid #898989;
+    color: #98291e;
+    float: left;
+    font-weight: bold;
+    width: 145px;
+}
+#claim P {
+    font-size: 12px;
+}
+#claim li.dot {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/bullet.png") no-repeat scroll 0 0;
+    font-size: 12px;
+    height: 15px;
+    margin-left: 26px;
+    padding: 0 0 15px 17px;
+    width: 530px;
+}
+.margin-left26 {
+    margin-left: 26px;
+}
+.buy_online_right {
+    height: 313px;
+    padding: 7px;
+}
+.advisor-form {
+    font-weight: bold;
+    height: 305px;
+    padding: 7px;
+}
+.advisor-form1 {
+    font-weight: bold;
+    height: 471px;
+    padding: 7px;
+}
+.advisor-row {
+    background: #eae9e9 none repeat scroll 0 0;
+    border-top: 1px solid #fff;
+    float: left;
+    height: 27px;
+    width: 307px;
+}
+.advisor-row .custom-class1 {
+    width: 75px !important;
+}
+.advisor-row .selectBox-label {
+    font-size: 11px !important;
+}
+.advisor-row .txt-grey-middle-small {
+    font-size: 11px;
+    font-weight: bold;
+    width: 137px;
+}
+.dob-grey-middle-small {
+    width: 108px !important;
+}
+.advisor-row .selectBox-options li a {
+    font-size: 11px !important;
+    font-weight: bold !important;
+}
+.advisor-row .input-field {
+    padding-top: 0;
+}
+.advisor-row label {
+    border-right: 3px solid #fff;
+    color: #2b2a26;
+    display: block;
+    float: left;
+    font-size: 11px;
+    font-weight: bold;
+    height: 24px;
+    line-height: 25px;
+    padding-left: 10px;
+    width: 118px;
+}
+.width-115 {
+    width: 115px !important;
+}
+.incorrect-input-img-smaa {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/incorrect-input.PNG") no-repeat scroll left top;
+    float: left;
+    height: 18px;
+    margin: 7px 0 0 10px;
+    width: 18px;
+}
+.ipru-news {
+    clear: both;
+    float: left;
+    margin-left: 25px;
+}
+.ipru-news ul {
+    margin: 0;
+    width: 600px;
+}
+.ipru-news li {
+    color: #000;
+    font-size: 12px;
+    padding-top: 15px;
+}
+.ipru-news li a {
+    color: #000;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.news-popup li {
+    background: rgba(0, 0, 0, 0) url("../images/red-arrow-right.gif") no-repeat scroll left top;
+    margin-top: 15px;
+    padding-left: 30px;
+    width: 670px;
+}
+.news-popup li p {
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.ipru-news-popup .overview p {
+    padding-bottom: 15px;
+}
+.ipru-news-popup th {
+    background: #ccc none repeat scroll 0 0 !important;
+    border-bottom: 1px solid #000;
+    height: 25px;
+}
+.ipru-news-popup td {
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+}
+.ipru-news-popup {
+    background: #fff none repeat scroll 0 0;
+    display: none;
+    height: 400px;
+    left: 140px;
+    padding: 25px 5px 10px 25px;
+    position: absolute;
+    top: 100px;
+    width: 750px;
+    z-index: 1002;
+}
+.ipru-news-popup .closeX1 {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/popup-close.png") no-repeat scroll 0 0;
+    font-family: "ZurichBTBoldCondensed",Arial,Helvetica,sans-serif;
+    font-size: 13px;
+    height: 21px;
+    padding-left: 12px;
+    padding-top: 5px;
+    position: absolute;
+    right: -6px;
+    top: -26px;
+    width: 71px;
+}
+.ipru-news-popup h3 {
+    font-size: 13px;
+    margin-top: 15px;
+}
+.ipru-news-popup .logo {
+    float: left;
+    margin-bottom: 10px;
+    margin-left: -10px;
+    width: 100%;
+}
+.ipru-news-popup .overview {
+    clear: both;
+    float: left;
+    height: 250px;
+    margin-top: 10px;
+    overflow: auto;
+    position: static;
+    width: 730px;
+}
+.breadcrumbs {
+    height: 25px;
+    padding-top: 5px;
+}
+.breadcrumbs li {
+    background: rgba(0, 0, 0, 0) url("img/bread-crumb-icon.png") no-repeat scroll 0 2px;
+    color: #e3b6b8;
+    float: left;
+    font-family: "ZurichBTBoldCondensed",Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    margin-left: 10px;
+    padding-left: 26px;
+    text-transform: uppercase;
+}
+.breadcrumbs li.first {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    margin-left: 0;
+    padding: 0;
+}
+.breadcrumbs li a {
+    color: #fff;
+    display: block;
+    padding-top: 0;
+}
+.breadcrumbs li a.home {
+    background: rgba(0, 0, 0, 0) url("img/home-icon.png") no-repeat scroll 0 0;
+    display: block;
+    font-size: 0;
+    height: 19px;
+    text-indent: -9999px;
+    width: 23px;
+}
+#zoombox {
+    background-color: white;
+    float: left;
+    height: 145px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+#zoomboxexp {
+    background-color: white;
+    bottom: 0;
+    height: 332px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    width: 438px;
+    z-index: 2;
+}
+.commingS {
+    display: none;
+    font-size: 20px;
+    position: absolute;
+    right: -110px;
+    top: -10px;
+}
+.pure-protect-list li a.buy_now {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/icons/buyNow.gif") no-repeat scroll center 0;
+    position: absolute;
+    right: 15px;
+    top: -140px;
+    width: 60px;
+}
+.pure-protect-list li a.buy_now_gray {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/icons/buyNow_gray.gif") no-repeat scroll center 0;
+    position: absolute;
+    right: 15px;
+    top: -140px;
+    width: 60px;
+}
+.pure-protect-list li a.sell_now {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/icons/buyNow.gif") no-repeat scroll center 0;
+    position: absolute;
+    right: 15px;
+    top: -140px;
+    width: 60px;
+}
+.pure-protect-list li a.sell_now_gray {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/icons/buyNow_gray.gif") no-repeat scroll center 0;
+    position: absolute;
+    right: 15px;
+    top: -140px;
+    width: 60px;
+}
+.pure-protect-list li a.key_features {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/icons/key_features.gif") no-repeat scroll center 0;
+    position: absolute;
+    right: -155px;
+    top: -140px;
+    width: 60px;
+}
+.pure-protect-list li a.key_features_gray {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/icons/key_features_gray.gif") no-repeat scroll center 0;
+    position: absolute;
+    right: -155px;
+    top: -140px;
+    width: 60px;
+}
+.pure-protect-list li a.brochures {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/icons/brochure.gif") no-repeat scroll center 0 !important;
+    position: absolute;
+    right: -73px;
+    top: -140px;
+    width: 60px;
+}
+.pure-protect-list li a.brochures_gray {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/icons/brochure_gray.gif") no-repeat scroll center 0 !important;
+    position: absolute;
+    right: -73px;
+    top: -140px;
+    width: 60px;
+}
+.pure-protect-list li a.video {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/icons/Expert_Speak.gif") no-repeat scroll center 0 !important;
+    position: absolute;
+    right: -73px;
+    top: -70px;
+    width: 60px;
+}
+.pure-protect-list li a.video_gray {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/icons/Expert_Speak_gray.gif") no-repeat scroll center 0 !important;
+    position: absolute;
+    right: -73px;
+    top: -70px;
+    width: 60px;
+}
+.pure-protect-list li a.Expert_Speak {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/icons/Expert_Speak.gif") no-repeat scroll center 0;
+    position: absolute;
+    right: -68px;
+    top: -150px;
+    width: 60px;
+}
+.pure-protect-list li a.Expert_Speak_gray {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/icons/Expert_Speak_gray.gif") no-repeat scroll center 0;
+    position: absolute;
+    right: -68px;
+    top: -150px;
+    width: 60px;
+}
+.pure-protect-list li a.leaflet {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/icons/leaflet.gif") no-repeat scroll center 0;
+    position: absolute;
+    right: -150px;
+    top: -90px;
+    width: 60px;
+}
+.pure-protect-list li a.leaflet_gray {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/icons/leaflet_gray.gif") no-repeat scroll center 0;
+    position: absolute;
+    right: -150px;
+    top: -90px;
+    width: 60px;
+}
+.pure-protect-list li a.sendadvisor {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/icons/Send_me_an_advisor.gif") no-repeat scroll center 0;
+    position: absolute;
+    right: -155px;
+    top: -70px;
+    width: 60px;
+}
+.pure-protect-list li a.sendadvisor_gray {
+    background: rgba(0, 0, 0, 0) url("/public/bolimages/icons/Send_me_an_advisor_gray.gif") no-repeat scroll center 0;
+    position: absolute;
+    right: -155px;
+    top: -70px;
+    width: 60px;
+}
+.pure-protect-list li a.more-info {
+    position: absolute;
+    right: 9px;
+    top: -70px;
+    width: 60px;
+}
+@-moz-document url-prefix("") {
+.pure-protect-list li a.more-info {
+    left: 0;
+    position: absolute;
+    top: -70px;
+    width: 60px;
+}
+}

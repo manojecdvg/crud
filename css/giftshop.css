@@ -1,0 +1,274 @@
+body,h1,h2,h3,p,td,quote,small,form,input,ul,li,ol,label{
+	margin:0px;
+	padding:0px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+	color:#555555;
+	font-size:15px;
+	background-color:#282828;
+	background-size:cover;/*this sets the image to fullscreen covering the whole screen*/
+	background-repeat: no-repeat;
+	height:100%;
+   width:100%;
+   background-image:url(../img/background.jpg);
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/background.jpg',sizingMethod='scale');
+   -ms-filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(src='image.jpg',sizingMethod='scale')"
+}
+
+.clear{
+	clear:both;
+}
+
+#main-container{
+	width:800px;
+	margin:20px auto;
+}
+
+.container{
+	margin-bottom:0px;
+}
+
+.top-label{
+	background:url(../img/label_bg.png) no-repeat;
+	display:inline-block;
+	margin-left:20px;
+	position:relative;
+	margin-bottom:-15px;
+}
+
+.label-txt{
+	background:url(../img/label_bg.png) no-repeat top right;
+	display:inline-block;
+	font-size:10px;
+	height:36px;
+	margin-left:10px;
+	padding:12px 15px 0 5px;
+	text-transform:uppercase;
+}
+
+.content-area{
+	background:url(../img/container_top.png) no-repeat #fcfcfc;
+	padding:15px 20px 0 20px;
+	border:thick;
+	
+}
+
+.content{
+	padding:10px;
+}
+
+.drag-desired{
+	background:url(../img/drag_desired_label.png) no-repeat top right;
+	/*padding:30px;
+	overflow-y:scroll; 
+	height:200px;*/
+}
+
+.drop-here{
+	background:url(../img/drop_here_label.png) no-repeat top right;
+}
+
+
+.bottom-container-border{
+	background:url(../img/container_bottom.png) no-repeat;
+	height:14px;
+}
+
+.product{
+	border:2px solid #F5F5F5;
+	float:left;
+	margin:15px;
+	padding:10px;
+
+}
+
+.product img{
+	cursor:move;
+}
+
+p.descr{
+	padding:5px 0;
+}
+
+small{
+	display:block;
+	margin-top:4px;
+}
+
+.tooltip{
+	position: absolute;
+	top: 10;
+	left: 0;
+	z-index: 3;
+	display: none;
+
+	background-color:#666666;
+	border:1px solid #666666;
+	color:#fcfcfc;
+
+	padding:10px;
+	
+	-moz-border-radius:12px;
+	-khtml-border-radius: 12px;
+	-webkit-border-radius: 12px;
+	border-radius:12px;
+}
+
+#cart-icon{
+	width:115px;
+	float:left;
+	position:relative;
+	/* border-top: thick solid green; */
+	
+}
+#hr{
+	width:100%;
+	 border-top: thick solid black;
+	
+}
+
+#ajax-loader{
+	position:absolute;
+	top:0px;
+	left:0px;
+	visibility:hidden;
+}
+
+#item-list{
+	float:left;
+	width:490px;
+	margin-left:20px;
+	padding-top:15px;
+	
+}
+
+a.remove,a.remove:visited{
+	color:red;
+	font-size:12px;
+	text-transform:uppercase;
+}
+
+#total{
+	clear:both;
+	float:right;
+	font-size:10px;
+	font-weight:bold;
+	padding:10px 12px;
+	text-transform:uppercase;
+}
+
+#item-list table{
+	/*
+	background-color:#F7F7F7;
+	border:1px solid #EFEFEF;*/
+	margin-top:5px;
+	padding:4px;
+}
+
+a.button,a.button:visited{
+	display:none;
+
+	height:28px;
+	width:136px;
+
+	padding-top:15px;
+	margin:0 auto;
+	overflow:hidden;
+
+	color:white;	
+	font-size:12px;
+	font-weight:bold;
+	text-align:center;
+	text-transform:uppercase;
+	
+	background:url(../img/button.png) no-repeat center top;
+	cursor:pointer;
+}
+
+a.button:hover{
+	background-position:bottom;
+	text-decoration:none;
+}
+
+.button1{
+
+
+height:25px;
+	width:120px;
+
+	padding-top:5px;
+	margin:0 auto;
+	overflow:hidden;
+
+	color:white;	
+	font-size:10px;
+	font-weight:bold;
+	text-align:center;
+	text-transform:uppercase;
+	
+	background:url(../img/button.png) no-repeat center top;
+	cursor:pointer;
+}
+.button1:hover{
+	background-position:bottom;
+	text-decoration:none;
+}
+
+a, a:visited {
+	color:#00BBFF;
+	text-decoration:none;
+	outline:none;
+}
+
+a:hover{
+	text-decoration:underline;
+}
+
+h1{
+	font-size:28px;
+	font-weight:bold;
+	font-family:"Trebuchet MS",Arial, Helvetica, sans-serif;
+}
+
+
+.tutorialzine h1{
+	color:white;
+	margin-bottom:10px;
+	font-size:48px;
+}
+
+.tutorialzine h3{
+	color:#F5F5F5;
+	font-size:10px;
+	font-weight:bold;
+	margin-bottom:30px;
+	text-transform:uppercase;
+}
+
+.tutorial-info{
+	color:white;
+	text-align:center;
+	padding:14px;
+	margin-top:-13px;
+	font-size:14px;
+}
+#dialog-form-error {  
+background: #FFFFFF url(../img/familyday1.png);
+background-repeat: no-repeat;
+text-indent: -9999em; /* hides the text */
+     padding: .5em 1em;
+}
+#dialog-confirm {  
+background: #FFFFFF url(../img/familyday4.png);
+background-repeat: no-repeat;
+text-indent: -9999em; /* hides the text */
+     padding: .5em 1em;
+}
+#dialog-form-success {  
+background: #FFFFFF url(../img/familyday2.png);
+background-repeat: no-repeat;
+text-indent: -9999em; /* hides the text */
+     padding: .5em 1em;
+}
